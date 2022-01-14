@@ -1,4 +1,14 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+.vscode
+.vscode/
+.vscode/*
+
+Session.vim
+.vim
+.vim/
+.vim/*
+
+.env
 
 # Compiled output
 /dist
