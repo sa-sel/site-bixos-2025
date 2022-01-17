@@ -8,3 +8,17 @@ assignees: ''
 ---
 
 ## Task description
+
+<!-- Describe what the developer should do to complete the task. -->
+
+## References
+
+Relevant/related links:
+
+<!-- List any links that may help the developer complete the task. -->
+- 
+
+<!-- Does this task depend on any other? -->
+<!-- ## Dependencies
+
+Depends on #<ISSUE_NUMBER>. -->
