@@ -18,6 +18,13 @@ Relevant/related links:
 <!-- List any links that may help the developer complete the task. -->
 - 
 
+<!-- Do you have a snippet of code to help the developer in this task? -->
+<!-- ## Example snippets
+
+```<LANGUAGE>
+<CODE>
+```-->
+
 <!-- Does this task depend on any other? -->
 <!-- ## Dependencies
 
