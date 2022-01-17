@@ -58,6 +58,11 @@ body,
     'Roboto', 'Oxygen';
 }
 
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
 a,
 a:link,
 a:visited {
