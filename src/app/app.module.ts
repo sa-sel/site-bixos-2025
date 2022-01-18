@@ -1,12 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
-import { LogoComponent, SocialMediaIconComponent } from '@shared'
+import { BannerComponent, LogoComponent, SocialMediaIconComponent } from '@shared'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
+import { AppRoutingModule } from './app-routing.module'
+import { AppComponent } from './app.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    BannerComponent,
     FooterComponent,
     LogoComponent,
     NavbarComponent,
@@ -16,4 +19,4 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip'
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
