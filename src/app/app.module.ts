@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FooterComponent } from '@core'
-import { SocialMediaIconComponent } from '@shared'
-import { AppComponent } from './app.component';
+import { FooterComponent, NavbarComponent } from '@core'
+import { LogoComponent, SocialMediaIconComponent } from '@shared'
+import { TooltipModule } from 'ngx-bootstrap/tooltip'
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
+    LogoComponent,
+    NavbarComponent,
     SocialMediaIconComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
