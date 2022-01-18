@@ -1,0 +1,28 @@
+<div
+  *ngIf="network.icon"
+  [style.fontSize]="size"
+  class="socialNetworkIcon {{ colorClass }}"
+>
+  <a
+    *ngIf="network.name !== 'Email'; else email"
+    [href]="network.url"
+    target="_blank"
+    [title]="network.name"
+  >
+    <i [class]="network.icon"></i>
+  </a>
+
+  <ng-template #email>
+    <button
+      (click)="copyToClipboard(network.url)"
+      [title]="network.url"
+      class="border-0 bg-transparent {{ colorClass }} p-0 m-0"
+      role="button"
+      type="button"
+      [tooltip]="tooltip"
+      [delay]="100"
+    >
+      <i [class]="network.icon"></i>
+    </button>
+  </ng-template>
+</div>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { SocialMediaIconComponent } from '@shared'
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,8 +11,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+    SocialMediaIconComponent,
   ],
+  imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
