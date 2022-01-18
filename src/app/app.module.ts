@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FooterComponent } from '@core'
 import { SocialMediaIconComponent } from '@shared'
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    AppComponent,
     SocialMediaIconComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],

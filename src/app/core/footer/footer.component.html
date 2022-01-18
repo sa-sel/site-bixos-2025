@@ -1,0 +1,76 @@
+<footer class="bg-dark pt-4 pb-1 no-select">
+  <div class="container">
+    <section
+      class="
+        d-flex
+        flex-column flex-md-row
+        justify-content-around
+        align-items-center
+        w-100
+        px-3
+        mb-3
+      "
+    >
+      <app-logo class="w-50 w-sm-30 w-md-25 w-lg-20 w-xl-15" [subtitle]="true"></app-logo>
+
+      <div
+        *ngIf="socialMedia.length"
+        class="
+          social-media-panel
+          d-flex
+          justify-content-around
+          align-items-center
+          w-55 w-md-45 w-lg-35
+        "
+      >
+        <app-social-media-icon
+          *ngFor="let network of socialMedia"
+          size="23pt"
+          [network]="network"
+          colorClass="text-primary"
+        ></app-social-media-icon>
+      </div>
+    </section>
+
+    <section class="text-gray-500 text-center text-justify pt-3 px-5">
+      <p>
+        © 2022 SA-SEL. Todos os direitos reservados. <br class="d-md-none" />
+        Desenvolvido por
+        <a
+          href="https://github.com/angelobguido"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ângelo Guido</a
+        >,
+        <a href="https://github.com/APMedrado" target="_blank" rel="noopener noreferrer"
+          >Antônio Pedro Medrado</a
+        >,
+        <a
+          href="https://github.com/DanielShinj1"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Daniel Shinji</a
+        >,
+        <a
+          href="https://github.com/lima-douglas"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Douglas Lima</a
+        >,
+        <a
+          href="https://github.com/lucasvianav/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Lucas Viana</a
+        >
+        e
+        <a
+          href="https://github.com/murilo-toddy"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Murilo Todão</a
+        >.
+      </p>
+    </section>
+  </div>
+</footer>
