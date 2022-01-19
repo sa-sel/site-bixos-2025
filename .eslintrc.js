@@ -58,7 +58,7 @@ module.exports = {
     'no-unused-vars': ['off', { vars: 'local', args: 'none' }],
     'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
     'block-spacing': 'error',
-    'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     camelcase: ['error', { ignoreGlobals: true }],
     'function-paren-newline': ['error', 'consistent'],
     'function-call-argument-newline': ['error', 'consistent'],
