@@ -1,15 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'app-logo',
   templateUrl: './logo.component.html',
 })
-export class LogoComponent implements OnInit {
+export class LogoComponent {
   @Input() subtitle = false
 
   path = '../../assets/images/logo/logo.png'
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
