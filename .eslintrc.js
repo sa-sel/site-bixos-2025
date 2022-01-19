@@ -57,17 +57,6 @@ module.exports = {
     'no-useless-concat': 'error',
     'no-unused-vars': ['off', { vars: 'local', args: 'none' }],
     'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
-    'array-bracket-newline': ['error', { multiline: true, minItems: 3 }],
-    'array-bracket-spacing': [
-      'error',
-      'always',
-      {
-        singleValue: false,
-        objectsInArrays: true,
-        arraysInArrays: true,
-      },
-    ],
-    'array-element-newline': ['error', { multiline: true, minItems: 3 }],
     'block-spacing': 'error',
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
     camelcase: ['error', { ignoreGlobals: true }],
@@ -83,7 +72,6 @@ module.exports = {
     indent: ['error', 2, { SwitchCase: 1 }],
     'jsx-quotes': 'error',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
-    'lines-between-class-members': 'error',
     'max-len': [
       'error',
       {
