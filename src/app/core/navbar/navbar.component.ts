@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   // TODO
   openSidebar(): void {
-    return
+    console.log('open sidebar')
   }
 
   goToHomepage(): void {

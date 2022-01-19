@@ -9,10 +9,10 @@ import { SocialMediaService } from '@services'
 })
 export class SocialMediaIconComponent implements OnInit {
   @Input() network!: SocialMediaModel
-  @Input() colorClass: string = ''
-  @Input() size: string = ''
+  @Input() colorClass = ''
+  @Input() size = ''
 
-  tooltip: string = ''
+  tooltip = ''
   tooltipTimeout?: any
 
   constructor(private socialMediaService: SocialMediaService) {}
