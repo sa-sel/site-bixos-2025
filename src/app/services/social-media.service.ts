@@ -46,19 +46,19 @@ export class SocialMediaService {
   }
 
   formatSocialMedia(socialNetworks: SocialMediaModel[]): SocialMediaModel[] {
-    const index = (networkName: SocialMedia) => {
-      return this.availableNetworks.indexOf(networkName)
-    }
+    const index = (networkName: SocialMedia) =>
+      this.availableNetworks.indexOf(networkName)
 
     return socialNetworks
       .filter(network => network.url && this.availableNetworks.includes(network.name))
-      .map(network => {
-        return <SocialMediaModel>{
-          name: network.name,
-          url: this.getLink(network, 'Olá, SA-SEL! Tudo bem?'),
-          icon: SocialMediaIconMap[network.name],
-        }
-      })
+      .map(
+        network =>
+          <SocialMediaModel>{
+            name: network.name,
+            url: this.getLink(network, 'Olá, SA-SEL! Tudo bem?'),
+            icon: SocialMediaIconMap[network.name],
+          }
+      )
       .sort((a, b) => index(a.name) - index(b.name))
   }
 }

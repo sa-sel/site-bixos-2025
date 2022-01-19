@@ -17,9 +17,9 @@ export class FooterComponent implements OnInit {
     { name: SocialMedia.YouTube, url: 'youtube.com' },
   ]
 
-  constructor (private socialMediaService: SocialMediaService) {}
+  constructor(private socialMediaService: SocialMediaService) {}
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.socialMedia = this.socialMediaService.formatSocialMedia(this.socialMedia)
   }
 }
