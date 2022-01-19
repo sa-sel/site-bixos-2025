@@ -5,9 +5,9 @@ import { Component, Input, OnInit } from '@angular/core'
   templateUrl: './logo.component.html',
 })
 export class LogoComponent implements OnInit {
-  @Input() subtitle: boolean = false
+  @Input() subtitle = false
 
-  path: string = '../../assets/images/logo/logo.png'
+  path = '../../assets/images/logo/logo.png'
 
   constructor() {}
 

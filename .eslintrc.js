@@ -72,7 +72,6 @@ module.exports = {
     indent: ['error', 2, { SwitchCase: 1 }],
     'jsx-quotes': 'error',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
-    'lines-between-class-members': 'error',
     'max-len': [
       'error',
       {

@@ -16,14 +16,14 @@ export class SocialMediaService {
   ]
 
   private getWhatsAppURL(phoneNumber: string, message: string): string {
-    const apiURL: string = 'https://api.whatsapp.com/send?phone=$PHONE&text=$MESSAGE'
+    const apiURL = 'https://api.whatsapp.com/send?phone=$PHONE&text=$MESSAGE'
 
     return apiURL
       .replace('$PHONE', phoneNumber.replace(/[()\s-+]/g, ''))
       .replace('$MESSAGE', message.replace('\n', ' '))
   }
 
-  private getLink(network: SocialMediaModel, message: string = ''): string {
+  private getLink(network: SocialMediaModel, message = ''): string {
     const { name, url } = network
     return name === SocialMedia.WhatsApp
       ? this.getWhatsAppURL(url, message)
