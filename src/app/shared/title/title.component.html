@@ -1,5 +1,16 @@
-<p class="h1 title">{{titleValue}}</p>
-<hr>
-<div *ngIf="subtitleValue">
-    <p class="h3">{{subtitleValue}}</p>
+<div class="mg-2">
+    <div *ngIf="!subtitle; else elseBlock">
+        <h2>
+            <ng-container *ngTemplateOutlet="tempOutlet"></ng-container>
+        </h2>
+        <hr>
+    </div>
+    <ng-template #elseBlock>
+        <h3>
+            <ng-container *ngTemplateOutlet="tempOutlet"></ng-container>
+        </h3>
+    </ng-template>
+    <ng-template #tempOutlet>
+        <ng-content></ng-content>
+    </ng-template>
 </div>
