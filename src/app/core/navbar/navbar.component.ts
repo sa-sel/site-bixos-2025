@@ -11,7 +11,7 @@ export class NavbarComponent {
 
   // TODO
   openSidebar(): void {
-    return
+    console.log('open sidebar')
   }
 
   goToHomepage(): void {

@@ -9,15 +9,18 @@ import { SocialMediaService } from '@services'
 })
 export class SocialMediaIconComponent implements OnInit {
   @Input() network!: SocialMediaModel
-  @Input() colorClass: string = ''
-  @Input() size: string = ''
 
-  tooltip: string = ''
+  @Input() colorClass = ''
+
+  @Input() size = ''
+
+  tooltip = ''
+
   tooltipTimeout?: any
 
-  constructor(private socialMediaService: SocialMediaService) {}
+  constructor (private socialMediaService: SocialMediaService) {}
 
-  ngOnInit(): void {
+  ngOnInit (): void {
     if (!this.colorClass.startsWith('text-')) {
       this.colorClass = ''
     }
@@ -25,7 +28,7 @@ export class SocialMediaIconComponent implements OnInit {
     this.tooltip = this.socialMediaService.getTooltipText()
   }
 
-  copyToClipboard(email: string): void {
+  copyToClipboard (email: string): void {
     if (this.tooltipTimeout) {
       clearTimeout(this.tooltipTimeout)
     }

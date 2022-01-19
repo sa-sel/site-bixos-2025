@@ -15,7 +15,11 @@ import { AppComponent } from './app.component'
     SocialMediaIconComponent,
     TitleComponent,
   ],
-  imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    TooltipModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
