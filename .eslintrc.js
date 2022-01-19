@@ -1,10 +1,10 @@
 module.exports = {
+  extends: ['plugin:@typescript-eslint/recommended', 'eslint:recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
     sourceType: 'module',
   },
-  extends: ['plugin:@typescript-eslint/recommended', 'eslint:recommended'],
   root: true,
   env: {
     node: true,
@@ -68,7 +68,6 @@ module.exports = {
     'comma-style': 'error',
     'comma-spacing': 'error',
     'comma-dangle': ['error', 'always-multiline'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
     indent: ['error', 2, { SwitchCase: 1 }],
     'jsx-quotes': 'error',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
