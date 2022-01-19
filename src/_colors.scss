@@ -6,7 +6,7 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -16,30 +16,30 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
+$black: #000;
 // scss-docs-end gray-color-variables
 
 // scss-docs-start color-variables
-$dark-blue : #0A2D61;
-$blue      : #228EBF;
-$indigo    : #6610f2;
-$purple    : #6f42c1;
-$pink      : #d63384;
-$red       : #dc3545;
-$orange    : #FF9900;
-$yellow    : #FFDB66;
-$green     : #198754;
-$teal      : #20c997;
-$cyan      : #64C1C7;
+$dark-blue: #0a2d61;
+$blue: #228ebf;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #ff9900;
+$yellow: #ffdb66;
+$green: #198754;
+$teal: #20c997;
+$cyan: #64c1c7;
 // scss-docs-end color-variables
 
 // scss-docs-start theme-color-variables
-$primary:       $blue;
-$secondary:     $dark-blue;
-$success:       $green;
-$info:          $cyan;
-$warning:       $orange;
-$danger:        $red;
-$light:         #F5F5F5;
-$dark:          #202020;
+$primary: $blue;
+$secondary: $dark-blue;
+$success: $green;
+$info: $cyan;
+$warning: $orange;
+$danger: $red;
+$light: #f5f5f5;
+$dark: #202020;
 // scss-docs-end theme-color-variables
