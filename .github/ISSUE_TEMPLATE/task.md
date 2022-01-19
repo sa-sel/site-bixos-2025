@@ -11,6 +11,10 @@ assignees: ''
 
 <!-- Describe what the developer should do to complete the task. -->
 
+### Portuguese 🇧🇷 
+
+<!-- Descreva o que o dev deve fazer para completar a task, em português. -->
+
 ## References
 
 Relevant/related links:
