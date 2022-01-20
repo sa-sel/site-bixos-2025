@@ -14,7 +14,10 @@ export class FooterComponent implements OnInit {
     { name: SocialMedia.GitHub, url: 'https://github.com/sa-sel' },
     { name: SocialMedia.Instagram, url: 'https://www.instagram.com/saselusp/' },
     { name: SocialMedia.WhatsApp, url: '+55 (71) 8155-6248' },
-    { name: SocialMedia.YouTube, url: 'https://www.youtube.com/channel/UCCIw2l3rNCepuZsugA4BC7w' }, 
+    {
+      name: SocialMedia.YouTube,
+      url: 'https://www.youtube.com/channel/UCCIw2l3rNCepuZsugA4BC7w',
+    },
   ]
 
   constructor(private socialMediaService: SocialMediaService) {}
