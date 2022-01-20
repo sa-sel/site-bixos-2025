@@ -9,7 +9,7 @@ import {
 } from '@shared'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
 import { SanitizeHtmlPipe } from '@pipes'
 
 @NgModule({
@@ -25,6 +25,6 @@ import { SanitizeHtmlPipe } from '@pipes'
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
