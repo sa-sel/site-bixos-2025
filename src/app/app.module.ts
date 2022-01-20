@@ -10,7 +10,7 @@ import {
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component';
-import { SanitizeHtmlPipe } from './sanitize-html.pipe'
+import { SanitizeHtmlPipe } from '@pipes'
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { SanitizeHtmlPipe } from './sanitize-html.pipe'
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
   providers: [],
-  bootstrap: [AppComponent],
-  exports: [SanitizeHtmlPipe]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
