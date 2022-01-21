@@ -1,4 +1,3 @@
-<!--TODO Sanitize HTML once pipe is merged-->
 <div *ngFor="let item of contents">
     <div class="container">
 
@@ -8,9 +7,8 @@
         </div>
 
         <!--Only text-->
-        <div *ngIf="!item.image && item.text">
-            <p class="text">{{ item.text }}</p>
-            <!-- <span [innerHTML]="item.text | sanitizeHtml"></span> -->
+        <div *ngIf="!item.image && item.text" class="row">
+            <span class="text" [innerHTML]="item.text | sanitizeHtml"></span>
         </div>
         
         <!--Text and image-->
@@ -20,8 +18,7 @@
                 <img [src]=item.image?.src [alt]=item.image?.alt style="width: 100%">
             </div>
             <div class="column">
-                <p class="text">{{ item.text }}</p>
-                <!-- <span [innerHTML]="item.text | sanitizeHtml"></span> -->
+                <span class="text" [innerHTML]="item.text | sanitizeHtml"></span>
             </div>
             {{ updateState() }}
         </div>
@@ -29,8 +26,7 @@
         <!--Image right-->
         <div *ngIf="item.image && item.text && !imageLeft" class="row">
             <div class="column">
-                <p class="text">{{ item.text }}</p>
-                <!-- <span [innerHTML]="item.text | sanitizeHtml"></span> -->
+                <span class="text" [innerHTML]="item.text | sanitizeHtml"></span>
             </div>
             <div class="column">
                 <img [src]=item.image?.src [alt]=item.image?.alt style="width: 100%">
@@ -39,5 +35,4 @@
         </div>
 
     </div>
-
 </div>

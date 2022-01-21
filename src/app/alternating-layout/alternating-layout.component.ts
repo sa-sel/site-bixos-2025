@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core'
+// import { ViewEncapsulation } from '@angular/compiler'
+import { Component, Input, ViewEncapsulation } from '@angular/core'
 
 interface alternatingLayout {
   image?: {
