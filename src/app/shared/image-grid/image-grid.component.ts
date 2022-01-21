@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Image } from './image';
 
 @Component({
   selector: 'app-image-grid',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageGridComponent implements OnInit {
 
+  images: Image[] = [];
+  
   constructor() { }
 
   ngOnInit(): void {
