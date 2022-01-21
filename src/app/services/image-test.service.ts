@@ -1,33 +1,26 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 
-import { Image } from '@shared';
+import { ImageGridItemModel } from '@models'
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ImageTestService {
-  images: Image[] = []
-  constructor(private http: HttpClient) { }
+  images: ImageGridItemModel[] = []
+  constructor() {}
 
-  getImages(): Image[]{
-    for(let i=0; i<898; i++){
-      let image_tmp: Image = {
+  getImages(): ImageGridItemModel[] {
+    for (let i = 0; i < 8; i++) {
+      this.images.push(<ImageGridItemModel>{
         image: {
-          src: "",
-          alt: "",
+          src: `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${(i + 1)
+            .toString(10)
+            .padStart(3, '0')}.png`,
+          alt: 'É o pokemon de id ' + (i + 1).toString(10),
         },
-        url: "",
-      }
-      let alt: string = "É o pokemon de id " + (i+1).toString(10)
-      let src: string = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${(i+1).toString(10).padStart(3, "0")}.png`
-      let url: string = `https://www.pokemon.com/us/pokedex/${(i+1).toString(10)}`
-      image_tmp.image.alt = alt
-      image_tmp.image.src = src
-      image_tmp.url = url
-      this.images.push(image_tmp)
+        url: `https://www.pokemon.com/us/pokedex/${(i + 1).toString(10)}`,
+      })
     }
     return this.images
   }
-
 }

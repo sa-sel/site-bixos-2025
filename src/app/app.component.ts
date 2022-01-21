@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 
-import { Image } from '@shared'
+import { ImageGridItemModel } from '@models'
 import { ImageTestService } from '@services'
 
 @Component({
@@ -8,11 +8,11 @@ import { ImageTestService } from '@services'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
-  images: Image[] = []
-  constructor(private imageService: ImageTestService){}
+export class AppComponent implements OnInit {
+  images: ImageGridItemModel[] = []
+  constructor(private imageService: ImageTestService) {}
 
-  ngOnInit(){
-    this.images=this.imageService.getImages()
+  ngOnInit() {
+    this.images = this.imageService.getImages()
   }
 }

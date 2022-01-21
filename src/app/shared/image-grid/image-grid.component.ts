@@ -1,19 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core'
 
-import { Image } from './image';
+import { ImageGridItemModel } from '@models'
 
 @Component({
   selector: 'app-image-grid',
   templateUrl: './image-grid.component.html',
-  styleUrls: ['./image-grid.component.scss']
 })
-export class ImageGridComponent implements OnInit {
-
-  @Input() images: Image[] = []
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ImageGridComponent {
+  @Input() images!: ImageGridItemModel[]
 }
