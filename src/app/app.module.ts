@@ -23,7 +23,7 @@ import { SanitizeHtmlPipe } from '@pipes'
     SocialMediaIconComponent,
     TitleComponent,
     SanitizeHtmlPipe,
-    AlternatingLayoutComponent
+    AlternatingLayoutComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
   providers: [],
