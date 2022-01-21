@@ -7,9 +7,11 @@ import {
   SocialMediaIconComponent,
   TitleComponent,
 } from '@shared'
+import { ModalModule } from 'ngx-bootstrap/modal'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
+import { ModalComponent } from './shared/modal/modal.component'
 
 @NgModule({
   declarations: [
@@ -20,8 +22,14 @@ import { AppComponent } from './app.component'
     NavbarComponent,
     SocialMediaIconComponent,
     TitleComponent,
+    ModalComponent,
   ],
-  imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    ModalModule.forRoot(),
+    TooltipModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
