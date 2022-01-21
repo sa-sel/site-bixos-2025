@@ -22,4 +22,13 @@ export class AlternatingLayoutComponent implements OnInit {
   constructor() { }
   ngOnInit(): void { }
 
+  updateState() {
+    if(this.imageLeft) { 
+      this.imageLeft = false; 
+    } 
+    else { 
+      this.imageLeft = true; 
+    }
+  }
+
 }
