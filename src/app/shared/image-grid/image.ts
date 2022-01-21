@@ -3,5 +3,5 @@ export interface Image{
         alt: string,
         src: string,
     },
-    link?: string,
+    url?: string,
 }

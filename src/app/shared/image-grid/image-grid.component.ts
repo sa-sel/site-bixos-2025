@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { Image } from './image';
 
 @Component({
@@ -8,7 +9,7 @@ import { Image } from './image';
 })
 export class ImageGridComponent implements OnInit {
 
-  @Input() images: Image[] = [];
+  @Input() images: Image[] = []
 
   constructor() { }
 

@@ -1,1 +1,9 @@
-<p>image-grid works!</p>
+<div class="container">
+    <div class="row">
+      <div class="col-sm" *ngFor="let image of images">
+        <a href={{image.url}}>
+            <img src={{image.image.src}} alt="{{image.image.alt}}">
+        </a>
+      </div>
+    </div>
+  </div>
