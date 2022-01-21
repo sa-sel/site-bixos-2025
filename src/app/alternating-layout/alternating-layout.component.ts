@@ -20,12 +20,10 @@ export class AlternatingLayoutComponent {
   imageLeft = true
 
   updateState() {
-    if(this.imageLeft) { 
-      this.imageLeft = false; 
-    } 
-    else { 
-      this.imageLeft = true; 
+    if(this.imageLeft) {
+      this.imageLeft = false
+    } else {
+      this.imageLeft = true
     }
   }
-
 }
