@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core'
 
 interface alternatingLayout {
   image?: {
@@ -6,21 +6,18 @@ interface alternatingLayout {
     src: string
   },
   text?: string
-};
+}
 
 @Component({
   selector: 'app-alternating-layout',
   templateUrl: './alternating-layout.component.html',
-  styleUrls: ['./alternating-layout.component.scss']
+  styleUrls: ['./alternating-layout.component.scss'],
 })
-export class AlternatingLayoutComponent implements OnInit {
+export class AlternatingLayoutComponent {
 
   @Input()
-  contents: alternatingLayout[] = [];
-  imageLeft = true;
-
-  constructor() { }
-  ngOnInit(): void { }
+  contents: alternatingLayout[] = []
+  imageLeft = true
 
   updateState() {
     if(this.imageLeft) { 
