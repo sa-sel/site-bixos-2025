@@ -11,7 +11,7 @@ export class ImageTestService {
   constructor(private http: HttpClient) { }
 
   getImages(): Image[]{
-    for(let i=0; i<90; i++){
+    for(let i=0; i<898; i++){
       let image_tmp: Image = {
         image: {
           src: "",
