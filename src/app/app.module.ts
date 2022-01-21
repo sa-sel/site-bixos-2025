@@ -11,17 +11,19 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { AlternatingLayoutComponent } from '@alternating-layout'
+import { SanitizeHtmlPipe } from '@pipes'
 
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent,
     FooterComponent,
+    BannerComponent,
     LogoComponent,
     NavbarComponent,
     SocialMediaIconComponent,
     TitleComponent,
-    AlternatingLayoutComponent,
+    SanitizeHtmlPipe,
+    AlternatingLayoutComponent
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
   providers: [],

@@ -21,9 +21,10 @@
     "paths": {
       "@services": ["services/index.ts"],
       "@models": ["models/index.ts"],
-      "@core": ["core/index.ts"],
       "@shared": ["shared/index.ts"],
-      "@alternating-layout": ["alternating-layout/index.ts"]
+      "@core": ["core/index.ts"],
+      "@alternating-layout": ["alternating-layout/index.ts"],
+      "@pipes": ["pipes/index.ts"],
     }
   },
   "angularCompilerOptions": {
