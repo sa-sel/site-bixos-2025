@@ -14,16 +14,15 @@ interface alternatingLayout {
   styleUrls: ['./alternating-layout.component.scss'],
 })
 export class AlternatingLayoutComponent {
+    @Input()
+    contents: alternatingLayout[] = []
+    imageLeft = true
 
-  @Input()
-  contents: alternatingLayout[] = []
-  imageLeft = true
-
-  updateState() {
-    if(this.imageLeft) {
-      this.imageLeft = false
-    } else {
-      this.imageLeft = true
+    updateState() {
+        if(this.imageLeft) {
+            this.imageLeft = false
+        } else {
+            this.imageLeft = true
+        }
     }
-  }
 }

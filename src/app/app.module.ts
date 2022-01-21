@@ -9,7 +9,7 @@ import {
 } from '@shared'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
 import { AlternatingLayoutComponent } from '@alternating-layout'
 
 @NgModule({
