@@ -15,7 +15,7 @@ interface alternatingLayout {
 })
 export class AlternatingLayoutComponent {
   @Input()
-  contents: alternatingLayout[] = []
+    contents: alternatingLayout[] = []
   imageLeft = true
 
   updateState() {
