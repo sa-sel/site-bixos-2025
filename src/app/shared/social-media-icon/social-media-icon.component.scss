@@ -1,0 +1,10 @@
+@import '../../../colors';
+
+.socialNetworkIcon button:hover {
+  color: $cyan !important;
+  transition: 0.25s;
+}
+
+.socialNetworkIcon button:active {
+  color: $secondary !important;
+}
