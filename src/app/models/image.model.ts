@@ -1,4 +1,4 @@
 export interface ImageModel {
-  alt: string
-  src: string
+  alt: string,
+  src: string,
 }

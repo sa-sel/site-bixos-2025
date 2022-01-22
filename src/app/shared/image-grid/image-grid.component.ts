@@ -7,5 +7,5 @@ import { ImageGridItemModel } from '@models'
   templateUrl: './image-grid.component.html',
 })
 export class ImageGridComponent {
-  @Input() images!: ImageGridItemModel[]
+  @Input() gridItems!: ImageGridItemModel[]
 }
