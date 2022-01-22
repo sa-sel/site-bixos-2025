@@ -1,0 +1,21 @@
+<div *ngFor="let item of contents">
+    <!--Only image-->
+    <div *ngIf="item.image && !item.text">
+        <img [src]=item.image.src [alt]=item.image.alt class="w-100">
+    </div>
+
+    <!--Only text-->
+    <div *ngIf="!item.image && item.text">
+        <p class="text" [innerHTML]="item.text | sanitizeHtml"></p>
+    </div>
+
+    <!--Image and text-->
+    <div *ngIf="item.image && item.text" class="d-flex flex-nowrap">
+        <div class="column" [ngClass]="item.imageOnLeft ? 'order-1' : 'order-2'">
+            <p class="text" [innerHTML]="item.text | sanitizeHtml"></p>
+        </div>
+        <div class="column" [ngClass]="item.imageOnLeft ? 'order-2' : 'order-1'">
+            <img [src]=item.image.src [alt]=item.image.alt class="w-100">
+        </div>
+    </div>
+</div>
