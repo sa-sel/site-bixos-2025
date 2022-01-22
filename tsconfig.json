@@ -19,11 +19,11 @@
     "lib": ["es2020", "dom"],
     "baseUrl": "./src/app/",
     "paths": {
+      "@alternating-layout": ["alternating-layout/index.ts"],
       "@services": ["services/index.ts"],
       "@models": ["models/index.ts"],
       "@shared": ["shared/index.ts"],
       "@core": ["core/index.ts"],
-      "@alternating-layout": ["alternating-layout/index.ts"],
       "@pipes": ["pipes/index.ts"],
     }
   },
