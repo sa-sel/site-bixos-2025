@@ -6,4 +6,5 @@ import { Component, Input } from '@angular/core'
 })
 export class TitleComponent {
   @Input() subtitle = false
+  @Input() marginBottom = true
 }
