@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
 import {
   BannerComponent,
+  ImageGridComponent,
   LogoComponent,
   SocialMediaIconComponent,
   TitleComponent,
-  ImageGridComponent,
 } from '@shared'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
@@ -18,11 +18,11 @@ import { SanitizeHtmlPipe } from '@pipes'
     AppComponent,
     BannerComponent,
     FooterComponent,
+    ImageGridComponent,
     LogoComponent,
     NavbarComponent,
     SocialMediaIconComponent,
     TitleComponent,
-    ImageGridComponent,
     SanitizeHtmlPipe,
   ],
   imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
