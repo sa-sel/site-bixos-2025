@@ -3,11 +3,13 @@ import {
   EventEmitter,
   Input,
   OnChanges,
+  OnInit,
   Output,
   SimpleChanges,
   TemplateRef,
   ViewChild,
 } from '@angular/core'
+import { ImageModel } from 'models/image.model'
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal'
 
 @Component({
@@ -15,16 +17,26 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal'
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss'],
 })
-export class ModalComponent implements OnChanges {
+export class ModalComponent implements OnInit, OnChanges {
   @ViewChild('modal') modal!: TemplateRef<any>
 
-  // two-way data binding
+  @Input() image?: ImageModel
   @Input() isOpen!: boolean
+  @Input() text?: string
+  @Input() title!: string
+  @Input() url?: string
+
+  // for two-way data binding
   @Output() isOpenChange = new EventEmitter<boolean>()
 
   modalRef?: BsModalRef
+  paragraphs?: string[]
 
   constructor(private modalService: BsModalService) {}
+
+  ngOnInit(): void {
+    this.paragraphs = this.text?.split('\n')
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     // eslint-disable-next-line
@@ -37,9 +49,5 @@ export class ModalComponent implements OnChanges {
         this.isOpenChange.emit(this.isOpen)
       })
     }
-  }
-
-  hide() {
-    this.modalRef?.hide()
   }
 }
