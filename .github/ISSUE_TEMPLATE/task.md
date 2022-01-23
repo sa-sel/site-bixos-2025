@@ -23,13 +23,15 @@ Relevant/related links:
 - 
 
 <!-- Do you have a snippet of code to help the developer in this task? -->
-<!-- ## Example snippets
+## Example snippets
 
 ```<LANGUAGE>
 <CODE>
-```-->
+```
 
 <!-- Does this task depend on any other? -->
-<!-- ## Dependencies
+## Dependencies
 
-Depends on #<ISSUE_NUMBER>. -->
+Depends on #<ISSUE_NUMBER>
+
+## Relevant images
