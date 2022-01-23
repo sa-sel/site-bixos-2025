@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
+import { SanitizeHtmlPipe } from '@pipes'
 import {
   BannerComponent,
   LogoComponent,
@@ -19,10 +20,11 @@ import { ModalComponent } from './shared/modal/modal.component'
     BannerComponent,
     FooterComponent,
     LogoComponent,
+    ModalComponent,
     NavbarComponent,
+    SanitizeHtmlPipe,
     SocialMediaIconComponent,
     TitleComponent,
-    ModalComponent,
   ],
   imports: [
     AppRoutingModule,

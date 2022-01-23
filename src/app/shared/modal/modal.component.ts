@@ -15,7 +15,6 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal'
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent implements OnInit, OnChanges {
   @ViewChild('modal') modal!: TemplateRef<any>
