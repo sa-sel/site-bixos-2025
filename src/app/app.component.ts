@@ -10,4 +10,8 @@ export class AppComponent {
     src: '../../../assets/images/banner.jpg',
     alt: 'uma foto da comissao',
   }
+  image2: ImageModel = {
+    src: 'https://freepikpsd.com/file/2019/10/generic-company-logo-png-7-Transparent-Images.png',
+    alt: 'uma logo qualquer',
+  }
 }
