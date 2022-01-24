@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
 import {
   BannerComponent,
+  ImageGridComponent,
   LogoComponent,
   SocialMediaIconComponent,
   TitleComponent,
@@ -17,6 +18,7 @@ import { SanitizeHtmlPipe } from '@pipes'
     AppComponent,
     BannerComponent,
     FooterComponent,
+    ImageGridComponent,
     LogoComponent,
     NavbarComponent,
     SocialMediaIconComponent,
