@@ -8,11 +8,4 @@ import { ImageModel } from '@models'
 })
 export class BannerComponent {
   @Input() image!: ImageModel
-
-  getUrl() {
-    return this.image.src
-  }
-  getAlt() {
-    return this.image.alt
-  }
 }
