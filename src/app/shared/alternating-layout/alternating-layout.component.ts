@@ -1,4 +1,4 @@
-import { AlternatingLayout } from '@models'
+import { AlternatingLayoutModel } from '@models'
 import { Component, Input, OnInit } from '@angular/core'
 
 @Component({
@@ -7,17 +7,16 @@ import { Component, Input, OnInit } from '@angular/core'
   styleUrls: ['./alternating-layout.component.scss'],
 })
 export class AlternatingLayoutComponent implements OnInit {
-  @Input() contents: AlternatingLayout[] = []
+  @Input() contents: AlternatingLayoutModel[] = []
   isImageLeft = true
 
   ngOnInit(): void {
-    for (let i = 0; i < this.contents.length; i++) {
-      this.isImageLeft = !this.isImageLeft
-      this.contents[i].imageOnLeft = this.isImageLeft
-    }
-  }
-
-  swapSides() {
-    this.isImageLeft = !this.isImageLeft
+    this.contents = this.contents.map(item => {
+      if (item.image && item.text) {
+        this.isImageLeft = !this.isImageLeft
+        return { ...item, imageOnLeft: this.isImageLeft }
+      }
+      return item
+    })
   }
 }

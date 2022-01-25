@@ -1,21 +1,27 @@
-<div *ngFor="let item of contents">
-  <!--Only image-->
-  <div *ngIf="item.image && !item.text">
-    <img [src]="item.image.src" [alt]="item.image.alt" class="w-100" />
-  </div>
+<div class="my-1 d-flex flex-column gap-5 px-3">
+  <div *ngFor="let item of contents">
+    <!--Only image-->
+    <div *ngIf="item.image && !item.text">
+      <img [src]="item.image.src" [alt]="item.image.alt" class="w-100" />
+    </div>
 
-  <!--Only text-->
-  <div *ngIf="!item.image && item.text">
-    <p class="text" [innerHTML]="item.text | sanitizeHtml"></p>
-  </div>
-
-  <!--Image and text-->
-  <div *ngIf="item.image && item.text" class="d-flex flex-nowrap">
-    <div class="column" [ngClass]="item.imageOnLeft ? 'order-1' : 'order-2'">
+    <!--Only text-->
+    <div *ngIf="!item.image && item.text">
       <p class="text" [innerHTML]="item.text | sanitizeHtml"></p>
     </div>
-    <div class="column" [ngClass]="item.imageOnLeft ? 'order-2' : 'order-1'">
-      <img [src]="item.image.src" [alt]="item.image.alt" class="w-100" />
+
+    <!--Image and text-->
+    <div *ngIf="item.image && item.text">
+      <div class="container">
+        <div [ngClass]="item.imageOnLeft ? 'floated-left' : 'floated-right'">
+          <img
+            [src]="contents[0].image?.src"
+            [alt]="contents[0].image?.alt"
+            class="w-100"
+          />
+        </div>
+        <p class="text" [innerHtml]="item.text | sanitizeHtml"></p>
+      </div>
     </div>
   </div>
 </div>

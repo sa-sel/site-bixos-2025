@@ -1,6 +1,6 @@
 import { ImageModel } from './image.model'
 
-export interface AlternatingLayout {
+export interface AlternatingLayoutModel {
   image?: ImageModel
   text?: string
   imageOnLeft?: boolean
