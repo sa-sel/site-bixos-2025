@@ -1,4 +1,4 @@
-export enum SocialMedia { // Order is important
+export enum SocialMedia {
   LinkedIn = 'LinkedIn',
   WhatsApp = 'WhatsApp',
   GitHub = 'GitHub',
@@ -9,7 +9,7 @@ export enum SocialMedia { // Order is important
   Discord = 'Discord',
 }
 
-export const enum SocialMediaIcons { // Order is important
+export const enum SocialMediaIcons {
   LinkedIn = 'fab fa-linkedin',
   WhatsApp = 'fab fa-whatsapp',
   GitHub = 'fab fa-github',
@@ -21,7 +21,6 @@ export const enum SocialMediaIcons { // Order is important
 }
 
 export const SocialMediaIconMap: Record<SocialMedia, SocialMediaIcons> = {
-  // Order is important
   [SocialMedia.LinkedIn]: SocialMediaIcons.LinkedIn,
   [SocialMedia.WhatsApp]: SocialMediaIcons.WhatsApp,
   [SocialMedia.GitHub]: SocialMediaIcons.GitHub,
