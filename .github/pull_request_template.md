@@ -1,5 +1,5 @@
 <!-- Substitute <ISSUE_NUMBER> by the task's actual issue number. -->
-Fixes #<ISSUE_NUMBER>.
+Fixes #<ISSUE_NUMBER>
 
 
 ## Changes

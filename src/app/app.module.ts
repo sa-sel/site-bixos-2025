@@ -4,6 +4,7 @@ import { FooterComponent, NavbarComponent } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
 import {
   BannerComponent,
+  ImageGridComponent,
   LogoComponent,
   SocialMediaIconComponent,
   TitleComponent,
@@ -19,6 +20,7 @@ import { ModalComponent } from './shared/modal/modal.component'
     AppComponent,
     BannerComponent,
     FooterComponent,
+    ImageGridComponent,
     LogoComponent,
     ModalComponent,
     NavbarComponent,
