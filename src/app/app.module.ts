@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
+import { SanitizeHtmlPipe } from '@pipes'
 import {
   BannerComponent,
   ImageGridComponent,
@@ -8,10 +9,11 @@ import {
   SocialMediaIconComponent,
   TitleComponent,
 } from '@shared'
+import { ModalModule } from 'ngx-bootstrap/modal'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { SanitizeHtmlPipe } from '@pipes'
+import { ModalComponent } from './shared/modal/modal.component'
 
 @NgModule({
   declarations: [
@@ -20,12 +22,18 @@ import { SanitizeHtmlPipe } from '@pipes'
     FooterComponent,
     ImageGridComponent,
     LogoComponent,
+    ModalComponent,
     NavbarComponent,
+    SanitizeHtmlPipe,
     SocialMediaIconComponent,
     TitleComponent,
-    SanitizeHtmlPipe,
   ],
-  imports: [AppRoutingModule, BrowserModule, TooltipModule.forRoot()],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    ModalModule.forRoot(),
+    TooltipModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
