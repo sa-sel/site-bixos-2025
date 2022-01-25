@@ -4,7 +4,7 @@ import { SocialMedia, SocialMediaIconMap, SocialMediaModel } from '@models'
 @Injectable({
   providedIn: 'root',
 })
-export class SocialMediaService {
+export class SocialMediaService { //Order is important
   availableNetworks = [
     SocialMedia.Facebook,
     SocialMedia.Instagram,
@@ -13,6 +13,7 @@ export class SocialMediaService {
     SocialMedia.YouTube,
     SocialMedia.GitHub,
     SocialMedia.LinkedIn,
+    SocialMedia.Discord,
   ]
 
   private getWhatsAppURL(phoneNumber: string, message: string): string {
