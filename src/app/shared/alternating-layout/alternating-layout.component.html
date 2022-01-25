@@ -13,19 +13,20 @@
     <!--Image and text-->
     <div *ngIf="item.image && item.text && item.imageOnLeft !== undefined">
       <div
-        [ngClass]="[textElement.offsetHeight < imageElement.offsetHeight ? 'd-flex' : '']"
+        [ngClass]="textElement.offsetHeight < imageElement.offsetHeight ? 'd-flex' : ''"
         class="align-items-center"
       >
         <div
           #imageElement
+          class="w-50"
           [ngClass]="
             getCustomImageClasses(
+              item,
               item.imageOnLeft,
               textElement.offsetHeight,
               imageElement.offsetHeight
             )
           "
-          class="c-w"
         >
           <img [src]="item.image.src" [alt]="item.image.alt" class="w-100" />
         </div>
@@ -34,6 +35,7 @@
           class="text-justify"
           [ngClass]="
             getCustomTextClasses(
+              item,
               item.imageOnLeft,
               textElement.offsetHeight,
               imageElement.offsetHeight
