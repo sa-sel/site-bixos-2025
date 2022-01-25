@@ -5,5 +5,4 @@ export interface ModalModel {
   isOpen : boolean
   text ?: string
   title : string
-  url ?: string
 }
