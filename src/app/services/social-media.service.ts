@@ -4,7 +4,8 @@ import { SocialMedia, SocialMediaIconMap, SocialMediaModel } from '@models'
 @Injectable({
   providedIn: 'root',
 })
-export class SocialMediaService { // Order is important
+export class SocialMediaService {
+  // Order is important
   availableNetworks = [
     SocialMedia.Facebook,
     SocialMedia.Instagram,
