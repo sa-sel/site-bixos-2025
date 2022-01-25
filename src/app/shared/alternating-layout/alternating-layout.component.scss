@@ -1,28 +1,24 @@
 // Text justification is not supported by bootstrap
-.text {
-  text-align: justify;
-  padding: 5%;
-}
+// .text-justify {
+//   text-align: justify;
+// }
 
-.container {
-  padding-bottom: 3%;
-  padding-top: 3%;
-}
-
-.floated-left {
+.left {
   float: left;
-  width: 50%;
-  padding-top: 5%;
-  padding-left: 5%;
   padding-right: 2%;
-  padding-bottom: 1%;
 }
 
-.floated-right {
+.right {
   float: right;
-  width: 50%;
-  padding-top: 5%;
   padding-left: 2%;
-  padding-right: 5%;
-  padding-bottom: 1%;
+}
+
+.c-w {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .c-w {
+    flex-direction: column;
+  }
 }

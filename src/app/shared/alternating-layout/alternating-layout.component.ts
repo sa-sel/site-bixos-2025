@@ -19,4 +19,27 @@ export class AlternatingLayoutComponent implements OnInit {
       return item
     })
   }
+
+  getCustomTextClasses = (
+    imageOnLeft: boolean,
+    textHeight: number,
+    imageHeight: number
+  ): string => {
+    if (textHeight < imageHeight) {
+      const order = imageOnLeft ? 'order-2' : 'order-1'
+      return `px-5 w-50 ${order}`
+    }
+    return ''
+  }
+
+  getCustomImageClasses = (
+    imageOnLeft: boolean,
+    textHeight: number,
+    imageHeight: number
+  ) => {
+    if (textHeight < imageHeight) {
+      return imageOnLeft ? 'order-1' : 'order-2'
+    }
+    return imageOnLeft ? 'left' : 'right'
+  }
 }
