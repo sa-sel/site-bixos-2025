@@ -58,7 +58,8 @@ Aside from that, start all your commit messages with `#<ISSUE/TASK_NUMBER> - `. 
     - Follow the instructions in the PR template
     - Move the task to the 'In PR' column in the board
 9.  Request @lucasvianav's review
-10.  Merge your PR only when:
+10. Merge your PR only when:
+
     - It was approved (in code review)
     - All CI checks have succeeded
     - There are no merge conflicts
