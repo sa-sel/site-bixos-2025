@@ -13,7 +13,7 @@ export const enum SocialMediaIcons {
   LinkedIn = 'fab fa-linkedin',
   WhatsApp = 'fab fa-whatsapp',
   GitHub = 'fab fa-github',
-  Email = 'fab fa-envelope',
+  Email = 'fas fa-envelope',
   Facebook = 'fab fa-facebook',
   YouTube = 'fab fa-youtube',
   Instagram = 'fab fa-instagram',
