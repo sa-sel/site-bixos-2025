@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
 import {
+  AlternatingLayoutComponent,
   BannerComponent,
   ImageGridComponent,
   LogoComponent,
@@ -17,9 +18,10 @@ import { ModalComponent } from './shared/modal/modal.component'
 
 @NgModule({
   declarations: [
+    AlternatingLayoutComponent,
     AppComponent,
-    BannerComponent,
     FooterComponent,
+    BannerComponent,
     ImageGridComponent,
     LogoComponent,
     ModalComponent,
