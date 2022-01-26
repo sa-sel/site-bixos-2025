@@ -1,7 +1,7 @@
 <app-banner [image]="image1"></app-banner>
-<div style="min-height: 85vh">
-  <app-navbar></app-navbar>
-  <main class="container">
+<app-navbar></app-navbar>
+<div>
+  <main style="min-height: calc(100vh - 230px); margin-top: 85px" class="container">
     <app-title>Titulo</app-title>
     <app-title [subtitle]="true">Subtitulo</app-title>
 
@@ -65,4 +65,4 @@
     <router-outlet></router-outlet>
   </main>
 </div>
-<app-footer></app-footer>
+<app-footer style="margin-top: auto"></app-footer>
