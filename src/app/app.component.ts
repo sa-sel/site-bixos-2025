@@ -43,10 +43,6 @@ export class AppComponent {
     src: '../../../assets/images/banner.jpg',
     alt: 'uma foto da comissao',
   }
-  image2: ImageModel = {
-    src: '../../../assets/images/testing.jpg',
-    alt: 'imagem teste',
-  }
 
   toggleModal() {
     this.openModal = !this.openModal
