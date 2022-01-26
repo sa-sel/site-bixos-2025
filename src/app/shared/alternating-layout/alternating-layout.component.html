@@ -1,4 +1,4 @@
-<div class="my-1 d-flex flex-column gap-5 px-3">
+<div class="my-1 row flex-column gap-5 px-3">
   <div *ngFor="let item of contents">
     <!--Only image-->
     <div *ngIf="item.image && !item.text">
@@ -12,35 +12,22 @@
 
     <!--Image and text-->
     <div *ngIf="item.image && item.text && item.imageOnLeft !== undefined">
+      <!-- Following ngClass is used to toggle wrap mode if image is smaller than text -->
       <div
-        [ngClass]="textElement.offsetHeight < imageElement.offsetHeight ? 'd-flex' : ''"
+        [ngClass]="textElement.offsetHeight < imageElement.offsetHeight ? 'row' : ''"
         class="align-items-center"
       >
         <div
           #imageElement
-          class="w-50"
-          [ngClass]="
-            getCustomImageClasses(
-              item,
-              item.imageOnLeft,
-              textElement.offsetHeight,
-              imageElement.offsetHeight
-            )
-          "
+          class="w-50 col-sm"
+          [ngClass]="item.imageOnLeft ? 'order-1 left' : 'order-2 right'"
         >
           <img [src]="item.image.src" [alt]="item.image.alt" class="w-100" />
         </div>
         <p
           #textElement
-          class="text-justify"
-          [ngClass]="
-            getCustomTextClasses(
-              item,
-              item.imageOnLeft,
-              textElement.offsetHeight,
-              imageElement.offsetHeight
-            )
-          "
+          class="text-justify col-sm"
+          [ngClass]="item.imageOnLeft ? 'order-2' : 'order-1'"
           [innerHtml]="item.text | sanitizeHtml"
         ></p>
       </div>

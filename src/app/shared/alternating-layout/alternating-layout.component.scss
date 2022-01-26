@@ -1,8 +1,5 @@
-// Text justification is not supported by bootstrap
-// .text-justify {
-//   text-align: justify;
-// }
-
+// For some reason, bootstrap float breaks responsiveness
+// That's why these classes are needed
 .left {
   float: left;
   padding-right: 2%;
@@ -11,14 +8,4 @@
 .right {
   float: right;
   padding-left: 2%;
-}
-
-.c-w {
-  width: 50%;
-}
-
-@media (max-width: 700px) {
-  .c-w {
-    flex-direction: column;
-  }
 }
