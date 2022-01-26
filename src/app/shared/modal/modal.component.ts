@@ -34,6 +34,7 @@ export class ModalComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     this.paragraphs = this.text?.split('\n')
+    
     // eslint-disable-next-line
     if (changes['isOpen'].currentValue) {
       this.modalRef?.onHide?.unsubscribe()
