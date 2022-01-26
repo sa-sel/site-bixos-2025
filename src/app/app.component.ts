@@ -8,9 +8,14 @@ import { ImageModel } from '@models'
 export class AppComponent {
   openModal = false
   image1: ImageModel = {
-    src: '../../../assets/images/banner.jpg',
+    src: '../../../assets/images/banner.jpg', 
     alt: 'uma foto da comissao',
   }
+  image2: ImageModel = {
+    src: '../../../assets/images/testing.jpg',
+    alt: 'imagem teste'
+  }
+
 
   toggleModal() {
     this.openModal = !this.openModal
