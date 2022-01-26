@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FooterComponent, NavbarComponent } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
 import {
+  AlternatingLayoutComponent,
   BannerComponent,
   ImageGridComponent,
   LogoComponent,
@@ -13,14 +14,15 @@ import { ModalModule } from 'ngx-bootstrap/modal'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { ModalComponent } from './shared/modal/modal.component';
+import { ModalComponent } from './shared/modal/modal.component'
 import { CarouselModule } from 'ngx-bootstrap/carousel'
 
 @NgModule({
   declarations: [
+    AlternatingLayoutComponent,
     AppComponent,
-    BannerComponent,
     FooterComponent,
+    BannerComponent,
     ImageGridComponent,
     LogoComponent,
     ModalComponent,

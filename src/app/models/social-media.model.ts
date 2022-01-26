@@ -6,16 +6,18 @@ export enum SocialMedia {
   Facebook = 'Facebook',
   YouTube = 'YouTube',
   Instagram = 'Instagram',
+  Discord = 'Discord',
 }
 
 export const enum SocialMediaIcons {
   LinkedIn = 'fab fa-linkedin',
   WhatsApp = 'fab fa-whatsapp',
   GitHub = 'fab fa-github',
-  Email = 'fab fa-envelope',
+  Email = 'fas fa-envelope',
   Facebook = 'fab fa-facebook',
   YouTube = 'fab fa-youtube',
   Instagram = 'fab fa-instagram',
+  Discord = 'fab fa-discord',
 }
 
 export const SocialMediaIconMap: Record<SocialMedia, SocialMediaIcons> = {
@@ -26,6 +28,7 @@ export const SocialMediaIconMap: Record<SocialMedia, SocialMediaIcons> = {
   [SocialMedia.Facebook]: SocialMediaIcons.Facebook,
   [SocialMedia.YouTube]: SocialMediaIcons.YouTube,
   [SocialMedia.Instagram]: SocialMediaIcons.Instagram,
+  [SocialMedia.Discord]: SocialMediaIcons.Discord,
 }
 
 export interface SocialMediaModel {
