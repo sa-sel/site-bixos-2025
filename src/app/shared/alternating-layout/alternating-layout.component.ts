@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core'
   styleUrls: ['./alternating-layout.component.scss'],
 })
 export class AlternatingLayoutComponent implements OnInit {
-  @Input() contents: AlternatingLayoutModel[] = []
+  @Input() contents!: AlternatingLayoutModel[]
   isImageLeft = true
 
   ngOnInit(): void {
