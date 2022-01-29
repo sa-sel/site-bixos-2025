@@ -1,8 +1,12 @@
-<app-banner [image]="image1"></app-banner>
+<app-banner [background]="image1" [logo]="image3"></app-banner>
 <app-navbar></app-navbar>
-
-<main class="container">
+<main
+  class="container"
+  style="min-height: calc(100vh + 20px - {{ footerElement.offsetHeight }}px)"
+>
   <router-outlet></router-outlet>
 </main>
 
-<app-footer></app-footer>
+<div #footerElement>
+  <app-footer></app-footer>
+</div>
