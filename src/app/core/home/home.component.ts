@@ -50,6 +50,32 @@ export class HomeComponent {
 
   openModal = false
 
+  image1 = {
+    image: {
+      src: '../../../assets/images/banner.jpg',
+      alt: 'uma foto da comissao',
+      caption: 'uma foto da comissao',
+    },
+    url: 'https://google.com',
+  }
+
+  image2 = {
+    image: {
+      src: 'https://freepikpsd.com/file/2019/10/generic-company-logo-png-7-Transparent-Images.png',
+      alt: 'imagem teste',
+      caption: 'imagem teste',
+    },
+    url: 'https://google.com',
+  }
+
+  image3 = {
+    image: {
+      src: 'https://freepikpsd.com/file/2019/10/generic-company-logo-png-7-Transparent-Images.png',
+      alt: 'uma logo qualquer',
+    },
+    url: 'https://google.com',
+  }
+
   toggleModal() {
     this.openModal = !this.openModal
   }
