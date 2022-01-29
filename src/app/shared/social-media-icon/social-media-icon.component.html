@@ -1,7 +1,7 @@
 <div
   *ngIf="network.icon"
   [style.fontSize]="size"
-  class="socialNetworkIcon {{ colorClass }}"
+  class="social-network-icon {{ color }}"
 >
   <a
     *ngIf="network.name !== 'Email'; else email"
@@ -16,7 +16,7 @@
     <button
       (click)="copyToClipboard(network.url)"
       [title]="network.url"
-      class="border-0 bg-transparent {{ colorClass }} p-0 m-0"
+      class="border-0 bg-transparent {{ color }} p-0 m-0"
       role="button"
       type="button"
       [tooltip]="tooltip"
