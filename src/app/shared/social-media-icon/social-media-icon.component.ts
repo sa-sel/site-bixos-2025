@@ -19,6 +19,8 @@ export class SocialMediaIconComponent implements OnInit {
 
   ngOnInit(): void {
     this.color = this.color ? `text-${this.color}` : ''
+
+    this.network = this.socialMediaService.format(this.network)
     this.tooltip = this.socialMediaService.getTooltipText()
   }
 

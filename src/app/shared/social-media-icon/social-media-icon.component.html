@@ -1,8 +1,4 @@
-<div
-  *ngIf="network.icon"
-  [style.fontSize]="size"
-  class="social-network-icon {{ color }}"
->
+<div *ngIf="network.icon" [style.fontSize]="size" class="social-network-icon {{ color }}">
   <a
     *ngIf="network.name !== 'Email'; else email"
     [href]="network.url"
