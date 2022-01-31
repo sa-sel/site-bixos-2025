@@ -22,6 +22,7 @@ export class SocialMediaIconComponent implements OnInit {
       this.colorClass = ''
     }
 
+    this.network = this.socialMediaService.format(this.network)
     this.tooltip = this.socialMediaService.getTooltipText()
   }
 
