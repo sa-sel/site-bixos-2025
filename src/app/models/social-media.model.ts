@@ -1,31 +1,34 @@
 export enum SocialMedia {
-  LinkedIn = 'LinkedIn',
-  WhatsApp = 'WhatsApp',
-  GitHub = 'GitHub',
+  Discord = 'Discord',
   Email = 'Email',
   Facebook = 'Facebook',
-  YouTube = 'YouTube',
+  GitHub = 'GitHub',
   Instagram = 'Instagram',
+  LinkedIn = 'LinkedIn',
+  WhatsApp = 'WhatsApp',
+  YouTube = 'YouTube',
 }
 
 export const enum SocialMediaIcons {
+  Discord = 'fab fa-discord',
+  Email = 'fas fa-envelope',
+  Facebook = 'fab fa-facebook',
+  GitHub = 'fab fa-github',
+  Instagram = 'fab fa-instagram',
   LinkedIn = 'fab fa-linkedin',
   WhatsApp = 'fab fa-whatsapp',
-  GitHub = 'fab fa-github',
-  Email = 'fab fa-envelope',
-  Facebook = 'fab fa-facebook',
   YouTube = 'fab fa-youtube',
-  Instagram = 'fab fa-instagram',
 }
 
 export const SocialMediaIconMap: Record<SocialMedia, SocialMediaIcons> = {
-  [SocialMedia.LinkedIn]: SocialMediaIcons.LinkedIn,
-  [SocialMedia.WhatsApp]: SocialMediaIcons.WhatsApp,
-  [SocialMedia.GitHub]: SocialMediaIcons.GitHub,
+  [SocialMedia.Discord]: SocialMediaIcons.Discord,
   [SocialMedia.Email]: SocialMediaIcons.Email,
   [SocialMedia.Facebook]: SocialMediaIcons.Facebook,
-  [SocialMedia.YouTube]: SocialMediaIcons.YouTube,
+  [SocialMedia.GitHub]: SocialMediaIcons.GitHub,
   [SocialMedia.Instagram]: SocialMediaIcons.Instagram,
+  [SocialMedia.LinkedIn]: SocialMediaIcons.LinkedIn,
+  [SocialMedia.WhatsApp]: SocialMediaIcons.WhatsApp,
+  [SocialMedia.YouTube]: SocialMediaIcons.YouTube,
 }
 
 export interface SocialMediaModel {

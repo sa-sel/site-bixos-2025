@@ -7,8 +7,8 @@ import { ImageGridItemModel, ModalModel } from '@models'
   templateUrl: './image-grid.component.html',
 })
 export class ImageGridComponent {
-  @Input() gridItens!: ImageGridItemModel[]
-  
+  @Input() gridItems!: ImageGridItemModel[]
+
   openModal = false
   modal: ModalModel = {
     image: { src: '', alt: '' },
@@ -16,7 +16,7 @@ export class ImageGridComponent {
     url: '',
     title: '',
   }
-  
+
   createModal(modal: ModalModel) {
     this.modal = modal
     this.openModal = true

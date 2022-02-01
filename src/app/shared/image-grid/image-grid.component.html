@@ -1,8 +1,7 @@
 <div class="row p-5 justify-content-center">
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0" *ngFor="let item of gridItens">
-
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0" *ngFor="let item of gridItems">
     <div *ngIf="!item.modal; else showModal">
-      <a [href]="item.url">
+      <a [href]="item.url" target="_blank" rel="”noreferrer" noopener”>
         <img [src]="item.image.src" [alt]="item.image.alt" class="d-block m-auto w-100" />
       </a>
     </div>
@@ -15,7 +14,6 @@
         class="d-block m-auto w-100 cursor-pointer"
       />
     </ng-template>
-    
   </div>
 </div>
 
