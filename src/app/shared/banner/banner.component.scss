@@ -1,6 +1,6 @@
 @import '../../../colors';
 
-.banner-image {
+.banner-bg {
   height: 100vh;
   background-repeat: no-repeat;
   background-color: $black;
@@ -16,15 +16,10 @@
   z-index: 1;
 }
 
-.banner-title-container {
+.logo-container {
   position: absolute;
-  width: 60%;
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
-
-.banner-title-container img {
-  width: 100%;
 }
