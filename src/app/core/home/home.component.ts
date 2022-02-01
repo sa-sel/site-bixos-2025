@@ -57,9 +57,13 @@ export class HomeComponent {
       caption: 'uma foto da comissao',
     },
     modal: {
+      image: {
+        src: '../../../assets/images/banner.jpg',
+        alt: 'uma foto da comissao',
+        caption: 'testinho',
+      },
       text: 'oioioitesteeee',
       title: 'OIIIII',
-      url: 'https://google.com',
     },
   }
 
