@@ -6,13 +6,19 @@ import { ImageModel } from '@models'
   templateUrl: './app.component.html',
 })
 export class AppComponent {
+  openModal = false
+
   image1: ImageModel = {
     src: '../../../assets/images/banner.jpg',
     alt: 'uma foto da comissao',
   }
 
+  toggleModal() {
+    this.openModal = !this.openModal
+  }
+
   image2: ImageModel = {
-    src: '../../../assets/images/testing.jpg',
+    src: 'https://pixy.org/src2/600/6007103.jpg',
     alt: 'imagem teste',
   }
 

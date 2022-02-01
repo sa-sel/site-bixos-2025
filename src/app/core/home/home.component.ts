@@ -56,7 +56,11 @@ export class HomeComponent {
       alt: 'uma foto da comissao',
       caption: 'uma foto da comissao',
     },
-    url: 'https://google.com',
+    modal: {
+      text: 'oioioitesteeee',
+      title: 'OIIIII',
+      url: 'https://google.com',
+    },
   }
 
   image2 = {

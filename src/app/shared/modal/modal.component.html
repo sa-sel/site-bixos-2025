@@ -12,8 +12,8 @@
   </div>
 
   <div class="modal-body">
-    <figure class="mt-2 mb-5">
-      <a [href]="url" target="__blank" *ngIf="url; else coverOnly">
+    <figure class="mt-2 mb-5" *ngIf="url; else coverOnly">
+      <a [href]="url" target="__blank">
         <img [src]="image?.src" [alt]="image?.alt" class="w-100 image-responsive" />
       </a>
       <figcaption>{{ image?.caption }}</figcaption>
