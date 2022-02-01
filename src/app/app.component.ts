@@ -18,7 +18,7 @@ export class AppComponent {
   }
 
   image2: ImageModel = {
-    src: '../../../assets/images/testing.jpg',
+    src: 'https://pixy.org/src2/600/6007103.jpg',
     alt: 'imagem teste',
   }
 
