@@ -3,7 +3,8 @@ name: Devlopment Enviroment CD
 on:
   workflow_run:
     workflows: ["CI for push"]
-    branches: [dev]
+    branches:
+      - dev
     types:
       - completed
 

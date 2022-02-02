@@ -3,7 +3,8 @@ name: Production Enviroment CD
 on:
   workflow_run:
     workflows: ["CI for push"]
-    branches: [main]
+    branches:
+      - main
     types:
       - completed
 
