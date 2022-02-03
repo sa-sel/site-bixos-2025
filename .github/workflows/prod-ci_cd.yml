@@ -1,28 +1,41 @@
-name: Production Enviroment CD
+name: Production Environment CI/CD
 
 on:
-  workflow_run:
-    workflows: ["CI for push"]
+  push:
     branches:
       - main
-    types:
-      - completed
 
 jobs:
+  lint_prod:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - run: npm ci
+    - run: npm run lint
+
   deploy_prod:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    needs: lint_prod
 
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-      with:
-        ref: 'main'
 
-    - name: Use Node.js 14
+    - name: Use Node.js 16
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: '16'
 
     - name: 🔨 Build Project
       run: |
