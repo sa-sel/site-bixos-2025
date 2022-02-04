@@ -5,12 +5,16 @@ import { Component, Input, OnInit } from '@angular/core'
   templateUrl: './logo.component.html',
 })
 export class LogoComponent implements OnInit {
-  @Input() secondary = false
-  path = '/assets/images/logo/primary.png'
+  @Input() subtitle = false
+  @Input() minimal = false
+
+  path = '/assets/images/logo/main.svg'
 
   ngOnInit(): void {
-    if (this.secondary) {
-      this.path = this.path.replace('primary', 'secondary')
+    if (this.subtitle) {
+      this.path = this.path.replace('main', 'subtitle')
+    } else if (this.minimal) {
+      this.path = this.path.replace('main', 'minimal')
     }
   }
 }
