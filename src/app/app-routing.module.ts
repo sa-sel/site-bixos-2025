@@ -1,7 +1,7 @@
-import { BandejaoComponent } from './core/bandejao/bandejao.component'
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { HomeComponent } from '@core'
+import { BandejaoComponent } from './core/bandejao/bandejao.component'
 import { MatriculaComponent } from './core/matricula/matricula.component'
 
 const routes: Routes = [
@@ -10,21 +10,33 @@ const routes: Routes = [
     component: HomeComponent,
     data: {
       background: [
-        { src: '/assets/images/banner.jpg', alt: 'uma foto da comissao' },
-        { src: 'https://pixy.org/src2/600/6007103.jpg', alt: 'imagem teste' },
+        { src: '/assets/images/banner.jpg', alt: 'Membros da SA-SEL em 2019' },
       ],
       logo: {
-        src: 'https://freepikpsd.com/file/2019/10/generic-company-logo-png-7-Transparent-Images.png',
-        alt: 'uma logo qualquer',
+        src: '/assets/images/logo/subtitle.svg',
+        alt: 'Logo da SA-SEL',
       },
     },
   },
-  { path: 'matricula', component: MatriculaComponent },
-  { path: 'bandejao', component: BandejaoComponent },
-  // { path: 'kit-bixo', component: KitBixoComponent },
-  // { path: 'projeto-ampere', component: ProjetoAmpereComponent },
-  // { path: 'ic-extras', component: IcExtrasComponent },
-  // ...
+  {
+    path: 'matricula',
+    component: MatriculaComponent,
+    data: {
+      background: [
+        {
+          src: '/assets/images/matricula/banner.jpg',
+          alt: 'Foto do E1, prédio principal da EESC',
+        },
+      ],
+    },
+  },
+  {
+    path: 'bandejao',
+    component: BandejaoComponent,
+    data: {
+      background: [{ src: '/assets/images/bandejao/banner.jpg', alt: 'Foto do banejão' }],
+    },
+  },
   { path: '**', redirectTo: '/' },
 ]
 
