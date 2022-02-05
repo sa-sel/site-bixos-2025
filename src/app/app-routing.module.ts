@@ -2,22 +2,10 @@ import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { HomeComponent, SobreCursoComponent } from '@core'
 import { BandejaoComponent } from './core/bandejao/bandejao.component'
+import { BibliotecasComponent } from './core/bibliotecas/bibliotecas.component'
 import { MatriculaComponent } from './core/matricula/matricula.component'
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  {
-    path: 'curso',
-    component: SobreCursoComponent,
-    data: {
-      background: [
-        {
-          src: '/assets/images/sobre-curso/banner.jpg',
-          alt: 'Foto do prédio da SEL, departamento da elétrica',
-        },
-      ],
-    },
-  },
   {
     path: '',
     component: HomeComponent,
@@ -29,6 +17,30 @@ const routes: Routes = [
         src: '/assets/images/logo/subtitle.svg',
         alt: 'Logo da SA-SEL',
       },
+    },
+  },
+  {
+    path: 'bibliotecas',
+    component: BibliotecasComponent,
+    data: {
+      background: [
+        {
+          src: '/assets/images/bibliotecas/banner.jpg',
+          alt: 'Foto da biblioteca da EESC, segundo andar',
+        },
+      ],
+    },
+  },
+  {
+    path: 'curso',
+    component: SobreCursoComponent,
+    data: {
+      background: [
+        {
+          src: '/assets/images/sobre-curso/banner.jpg',
+          alt: 'Foto do prédio da SEL, departamento da elétrica',
+        },
+      ],
     },
   },
   {
