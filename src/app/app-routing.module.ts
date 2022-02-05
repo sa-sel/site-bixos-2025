@@ -1,10 +1,23 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { HomeComponent } from '@core'
+import { HomeComponent, SobreCursoComponent } from '@core'
 import { BandejaoComponent } from './core/bandejao/bandejao.component'
 import { MatriculaComponent } from './core/matricula/matricula.component'
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
+  {
+    path: 'curso',
+    component: SobreCursoComponent,
+    data: {
+      background: [
+        {
+          src: '/assets/images/sobre-curso/banner.jpg',
+          alt: 'Foto do prédio da SEL, departamento da elétrica',
+        },
+      ],
+    },
+  },
   {
     path: '',
     component: HomeComponent,
