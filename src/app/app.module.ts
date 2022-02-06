@@ -25,6 +25,7 @@ import { BandejaoComponent } from './core/bandejao/bandejao.component'
 import { BannerRouterComponent } from './core/banner-router/banner-router.component'
 import { HomeComponent } from './core/home/home.component'
 import { MatriculaComponent } from './core/matricula/matricula.component'
+import { ServicosAcademicosComponent } from 'core/servicos-academicos/servicos-academicos.component'
 import { ModalComponent } from './shared/modal/modal.component'
 
 @NgModule({
@@ -50,6 +51,7 @@ import { ModalComponent } from './shared/modal/modal.component'
     BannerRouterComponent,
     MatriculaComponent,
     BandejaoComponent,
+    ServicosAcademicosComponent,
     BibliotecasComponent,
   ],
   imports: [
