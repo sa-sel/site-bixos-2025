@@ -82,7 +82,7 @@ const routes: Routes = [
     },
   },
   {
-    path: 'ic-extra',
+    path: 'ics-extras',
     component: IcExtraComponent,
     data: {
       background: [
@@ -115,9 +115,10 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: 'enabled',
-      paramsInheritanceStrategy: 'always',
+      anchorScrolling: 'enabled',
       onSameUrlNavigation: 'reload',
+      paramsInheritanceStrategy: 'always',
+      scrollPositionRestoration: 'enabled',
     }),
   ],
   exports: [RouterModule],

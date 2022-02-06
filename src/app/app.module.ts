@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {
   BibliotecasComponent,
   FooterComponent,
+  GroupsPanelComponent,
   IcExtraComponent,
   NavbarComponent,
   SemanaDeRecepcaoComponent,
+  SidebarComponent,
   SobreCursoComponent,
 } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
@@ -14,11 +17,13 @@ import {
   BannerComponent,
   ImageGridComponent,
   LogoComponent,
+  ModalComponent,
   SocialMediaIconComponent,
   TitleComponent,
 } from '@shared'
 import { ServicosAcademicosComponent } from 'core/servicos-academicos/servicos-academicos.component'
 import { CarouselModule } from 'ngx-bootstrap/carousel'
+import { CollapseModule } from 'ngx-bootstrap/collapse'
 import { ModalModule } from 'ngx-bootstrap/modal'
 import { TooltipModule } from 'ngx-bootstrap/tooltip'
 import { AppRoutingModule } from './app-routing.module'
@@ -28,7 +33,6 @@ import { BannerRouterComponent } from './core/banner-router/banner-router.compon
 import { HomeComponent } from './core/home/home.component'
 import { MatriculaComponent } from './core/matricula/matricula.component'
 import { MoradiasComponent } from './core/moradias/moradias.component'
-import { ModalComponent } from './shared/modal/modal.component'
 
 @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { ModalComponent } from './shared/modal/modal.component'
     BannerRouterComponent,
     BibliotecasComponent,
     FooterComponent,
+    GroupsPanelComponent,
     HomeComponent,
     IcExtraComponent,
     ImageGridComponent,
@@ -50,14 +55,17 @@ import { ModalComponent } from './shared/modal/modal.component'
     SanitizeHtmlPipe,
     SemanaDeRecepcaoComponent,
     ServicosAcademicosComponent,
+    SidebarComponent,
     SobreCursoComponent,
     SocialMediaIconComponent,
     TitleComponent,
   ],
   imports: [
     AppRoutingModule,
+    BrowserAnimationsModule,
     BrowserModule,
     CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
     ModalModule.forRoot(),
     TooltipModule.forRoot(),
   ],
