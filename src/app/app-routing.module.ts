@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import {
-  HomeComponent,
   CampusComponent,
+  HomeComponent,
   IcExtraComponent,
+  PreparacaoEstudosComponent,
   SemanaDeRecepcaoComponent,
   SobreCursoComponent,
 } from '@core'
-import { MoradiasComponent } from './core/moradias/moradias.component'
 import { ServicosAcademicosComponent } from 'core/servicos-academicos/servicos-academicos.component'
 import { BandejaoComponent } from './core/bandejao/bandejao.component'
 import { BibliotecasComponent } from './core/bibliotecas/bibliotecas.component'
 import { MatriculaComponent } from './core/matricula/matricula.component'
+import { MoradiasComponent } from './core/moradias/moradias.component'
 
 const routes: Routes = [
   {
@@ -68,6 +69,15 @@ const routes: Routes = [
     component: BandejaoComponent,
     data: {
       background: [{ src: '/assets/images/bandejao/banner.jpg', alt: 'Foto do banejão' }],
+    },
+  },
+  {
+    path: 'preparacao-estudos',
+    component: PreparacaoEstudosComponent,
+    data: {
+      background: [
+        { src: '/assets/images/preparacao/banner.png', alt: 'Banner da preparacao' },
+      ],
     },
   },
   {
