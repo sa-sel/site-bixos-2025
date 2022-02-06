@@ -1,49 +1,40 @@
 @import 'src/styles';
 
-.sidebar-hover {
-  &:hover {
-    transition: 0.25s;
-    color: $light !important;
-    @extend .fw-bold;
-  }
+.active-utils {
+  transition: 0.25s;
+  color: $light !important;
+  @extend .fw-bold;
 }
 
-#sidebar {
-  .offcanvas-header {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  }
+.offcanvas-header {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
 
-  li:not(.expanded) div.page {
-    @extend .sidebar-hover;
+li:not(.expanded) div.page {
+  &:hover {
+    @extend .active-utils;
+    background-color: $secondary;
 
-    &:hover {
-      background-color: $secondary;
-      hr {
-        display: none;
-      }
-    }
-
-    border-radius: 6px;
-  }
-
-  .subtopic a {
-    @extend .sidebar-hover;
-
-    &:hover {
-      text-decoration: underline !important;
+    hr {
+      color: rgba(0, 0, 0, 0);
     }
   }
 
-  a:hover {
-    color: inherit !important;
-  }
+  border-radius: 6px;
+}
 
-  .expanded,
-  .expanded * {
-    transition: 0.25s;
-    background-color: $primary;
-    color: $light !important;
-    @extend .fw-bold;
-  }
+.subtopic a:hover {
+  @extend .active-utils;
+  text-decoration: underline !important;
+}
+
+a:hover {
+  color: inherit !important;
+}
+
+.expanded,
+.expanded * {
+  @extend .active-utils;
+  background-color: $primary;
 }
