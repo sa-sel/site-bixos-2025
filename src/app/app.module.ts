@@ -12,6 +12,7 @@ import {
   SemanaDeRecepcaoComponent,
   SidebarComponent,
   SobreCursoComponent,
+  ProjetoAmpereComponent,
 } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
 import {
@@ -63,6 +64,9 @@ import { MoradiasComponent } from './core/moradias/moradias.component'
     SobreCursoComponent,
     SocialMediaIconComponent,
     TitleComponent,
+    HomeComponent,
+    BibliotecasComponent,
+    ProjetoAmpereComponent,
   ],
   imports: [
     AppRoutingModule,

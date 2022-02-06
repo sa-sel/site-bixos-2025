@@ -7,6 +7,7 @@ import {
   PreparacaoEstudosComponent,
   SemanaDeRecepcaoComponent,
   SobreCursoComponent,
+  ProjetoAmpereComponent,
 } from '@core'
 import { ServicosAcademicosComponent } from 'core/servicos-academicos/servicos-academicos.component'
 import { BandejaoComponent } from './core/bandejao/bandejao.component'
@@ -69,6 +70,15 @@ const routes: Routes = [
     component: BandejaoComponent,
     data: {
       background: [{ src: '/assets/images/bandejao/banner.jpg', alt: 'Foto do banejão' }],
+    },
+  },
+  {
+    path: 'projeto-ampere',
+    component: ProjetoAmpereComponent,
+    data: {
+      background: [
+        { src: 'assets/images/projeto-ampere/banner.png', alt: 'projeto ampere' },
+      ],
     },
   },
   {
