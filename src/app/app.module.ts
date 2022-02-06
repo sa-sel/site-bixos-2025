@@ -10,6 +10,7 @@ import {
   SemanaDeRecepcaoComponent,
   SidebarComponent,
   SobreCursoComponent,
+  CampusComponent,
 } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
 import {
@@ -42,6 +43,7 @@ import { MoradiasComponent } from './core/moradias/moradias.component'
     BannerComponent,
     BannerRouterComponent,
     BibliotecasComponent,
+    CampusComponent,
     FooterComponent,
     GroupsPanelComponent,
     HomeComponent,
