@@ -5,6 +5,7 @@ import {
   FooterComponent,
   IcExtraComponent,
   NavbarComponent,
+  SemanaDeRecepcaoComponent,
   SobreCursoComponent,
 } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
@@ -47,6 +48,7 @@ import { ModalComponent } from './shared/modal/modal.component'
     MoradiasComponent,
     NavbarComponent,
     SanitizeHtmlPipe,
+    SemanaDeRecepcaoComponent,
     ServicosAcademicosComponent,
     SobreCursoComponent,
     SocialMediaIconComponent,
