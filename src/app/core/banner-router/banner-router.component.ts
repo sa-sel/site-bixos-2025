@@ -22,7 +22,7 @@ export class BannerRouterComponent implements OnInit, OnDestroy {
         const data: RouteDataModel = (route.state.root.firstChild?.data ??
           {}) as RouteDataModel
 
-        this.currentDarkness = data.bgDarkness || '55%'
+        this.currentDarkness = data.bgDarkness ?? '55%'
         this.currentImages = data.background
         this.currentLogo = data.logo
         this.currentTitle = data.title

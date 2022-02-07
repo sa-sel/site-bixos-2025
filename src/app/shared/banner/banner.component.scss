@@ -1,5 +1,5 @@
 @import 'src/styles';
-// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .banner-bg {
   width: 100%;
@@ -39,7 +39,7 @@
 
 .text-container {
   @extend .logo-container;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', sans-serif;
   max-width: 80%;
 
   & > h1 {
