@@ -85,6 +85,7 @@ const routes: (RouteModel | Route)[] = [
           alt: 'Parte de uma aula de física do Projeto Ampere',
         },
       ],
+      bgDarkness: 0.1,
       logo: {
         src: '/assets/images/projeto-ampere/logo.png',
         alt: 'Logo do Projeto Ampere',

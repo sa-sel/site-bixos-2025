@@ -10,4 +10,5 @@ export class BannerComponent {
   @Input() background!: ImageModel[]
   @Input() logo?: ImageModel
   @Input() title?: string
+  @Input() darkness: string | number = '55%'
 }
