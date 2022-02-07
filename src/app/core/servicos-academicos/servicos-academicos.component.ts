@@ -203,6 +203,22 @@ export class ServicosAcademicosComponent {
     },
     {
       image: {
+        src: '/assets/images/servicos-academicos/uspnet.svg',
+        alt: 'Logo da USP',
+        caption: 'VPN USPnet',
+      },
+      modal: {
+        image: {
+          src: '/assets/images/servicos-academicos/uspnet.svg',
+          alt: 'Logo da USP',
+        },
+        text: 'A USP possui o VPN USPnet que permite o acesso a bases de dados, livros eletrônicos e revistas eletrônicas',
+        title: 'VPN USPnet',
+        url: 'https://atendimentosti.usp.br/otrs/public.pl?Action=PublicFAQZoom;ItemID=15',
+      },
+    },
+    {
+      image: {
         src: '/assets/images/servicos-academicos/youtube.svg',
         alt: 'Logo do Youtube',
         caption: 'Youtube Premium',
@@ -213,7 +229,7 @@ export class ServicosAcademicosComponent {
           alt: 'Logo do Youtube',
         },
         text: 'Assim como no Spotify, estudantes recebem descontos tanto para o YouTube Premium quanto para o YouTube Music Premium, sendo necessário fazer uma verificação anual da sua permanência na universidade.',
-        title: 'Toutube Premium',
+        title: 'Youtube Premium',
         url: 'https://www.youtube.com/premium/',
       },
     },
