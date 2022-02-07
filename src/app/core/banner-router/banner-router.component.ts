@@ -8,9 +8,10 @@ import { Subscription } from 'rxjs'
   templateUrl: './banner-router.component.html',
 })
 export class BannerRouterComponent implements OnInit, OnDestroy {
-  subscription!: Subscription
-  currentImages!: ImageModel[]
+  currentImages: ImageModel[] = []
   currentLogo?: ImageModel
+  currentTitle = ''
+  subscription!: Subscription
 
   constructor(private router: Router) {}
 
@@ -21,6 +22,7 @@ export class BannerRouterComponent implements OnInit, OnDestroy {
         /* eslint-disable dot-notation */
         this.currentImages = data['background']
         this.currentLogo = data['logo']
+        this.currentTitle = data['title']
         /* eslint-enable dot-notation */
       }
     })

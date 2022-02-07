@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+import { Route, RouterModule, Routes } from '@angular/router'
 import {
   BandejaoComponent,
   BibliotecasComponent,
@@ -14,25 +14,24 @@ import {
   ServicosAcademicosComponent,
   SobreCursoComponent,
 } from '@core'
+import { RouteModel } from '@models'
 
-const routes: Routes = [
+const routes: (RouteModel | Route)[] = [
   {
     path: '',
     component: HomeComponent,
     data: {
+      title: 'Recepção dos Bixos - Elétrica 2022',
       background: [
         { src: '/assets/images/banner.jpg', alt: 'Membros da SA-SEL em 2019' },
       ],
-      logo: {
-        src: '/assets/images/logo/subtitle.svg',
-        alt: 'Logo da SA-SEL',
-      },
     },
   },
   {
     path: 'bibliotecas',
     component: BibliotecasComponent,
     data: {
+      title: 'Bibliotecas',
       background: [
         {
           src: '/assets/images/bibliotecas/banner.jpg',
@@ -45,6 +44,7 @@ const routes: Routes = [
     path: 'curso',
     component: SobreCursoComponent,
     data: {
+      title: 'Sobre o Curso',
       background: [
         {
           src: '/assets/images/sobre-curso/banner.jpg',
@@ -57,6 +57,7 @@ const routes: Routes = [
     path: 'matricula',
     component: MatriculaComponent,
     data: {
+      title: 'Matrícula',
       background: [
         {
           src: '/assets/images/matricula/banner.jpg',
@@ -69,6 +70,7 @@ const routes: Routes = [
     path: 'bandejao',
     component: BandejaoComponent,
     data: {
+      title: 'Bandejão (ou "Bandeco")',
       background: [{ src: '/assets/images/bandejao/banner.jpg', alt: 'Foto do banejão' }],
     },
   },
@@ -76,6 +78,7 @@ const routes: Routes = [
     path: 'projeto-ampere',
     component: ProjetoAmpereComponent,
     data: {
+      title: 'Projeto Ampere',
       background: [
         {
           src: '/assets/images/projeto-ampere/banner.jpg',
@@ -92,6 +95,7 @@ const routes: Routes = [
     path: 'preparacao-estudos',
     component: PreparacaoEstudosComponent,
     data: {
+      title: 'Preparação para os Estudos',
       background: [
         { src: '/assets/images/preparacao/banner.png', alt: 'Banner da preparacao' },
       ],
@@ -101,6 +105,7 @@ const routes: Routes = [
     path: 'campus',
     component: CampusComponent,
     data: {
+      title: 'Conheça o Campus',
       background: [
         { src: 'assets/images/campus/banner.jpg', alt: 'Evento no campus' },
         { src: 'assets/images/campus/Prédio_E1.png', alt: 'Prédio E1' },
@@ -133,6 +138,7 @@ const routes: Routes = [
     path: 'semana-de-recepcao',
     component: SemanaDeRecepcaoComponent,
     data: {
+      title: 'Semana de Recepção',
       background: [
         {
           src: '/assets/images/semana-de-recepcao/banner.png',
@@ -145,6 +151,7 @@ const routes: Routes = [
     path: 'ics-extras',
     component: IcExtraComponent,
     data: {
+      title: 'ICs e Extracurriculares',
       background: [
         { src: '/assets/images/ic-extra/ic-extra.jpg', alt: 'Foto de um gradiente' },
       ],
@@ -154,6 +161,7 @@ const routes: Routes = [
     path: 'servicos-academicos',
     component: ServicosAcademicosComponent,
     data: {
+      title: 'Serviços Acadêmicos',
       background: [
         {
           src: '/assets/images/servicos-academicos/banner.jpg',
@@ -166,6 +174,7 @@ const routes: Routes = [
     path: 'moradias',
     component: MoradiasComponent,
     data: {
+      title: 'Moradias',
       background: [{ src: '/assets/images/moradias/moradias.jpg', alt: 'Foto da USP' }],
     },
   },
@@ -174,7 +183,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, {
+    RouterModule.forRoot(routes as Routes, {
       anchorScrolling: 'enabled',
       onSameUrlNavigation: 'reload',
       paramsInheritanceStrategy: 'always',

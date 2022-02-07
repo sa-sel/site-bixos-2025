@@ -9,4 +9,5 @@ import { ImageModel } from '@models'
 export class BannerComponent {
   @Input() background!: ImageModel[]
   @Input() logo?: ImageModel
+  @Input() title?: string
 }
