@@ -17,6 +17,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = []
   sidebar!: bootstrap.Offcanvas
 
+  private changedRoutes = true
+
   // TODO: move this to .json file
   // TODO: make scrolling to fragment stop a little higher (because of navbar)
   // https://stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
@@ -136,6 +138,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
           const groups = regexp.exec(e.urlAfterRedirects)?.groups ?? {}
 
           /* eslint-disable dot-notation */
+          this.changedRoutes = this.route !== groups['route']
           this.route = groups['route']
           this.fragment = groups['fragment']?.replace('#', '') ?? ''
           /* eslint-enable dot-notation */
@@ -149,17 +152,23 @@ export class SidebarComponent implements OnInit, OnDestroy {
       this.router.events.subscribe(e => {
         if (e instanceof Scroll) {
           if (e.anchor) {
-            setTimeout(() => {
-              const anchorPosition = document
-                .querySelector(`#${e.anchor}`)
-                ?.getBoundingClientRect().top
+            setTimeout(
+              () => {
+                const navbarHeight =
+                  document.querySelector('#navbar')?.getBoundingClientRect().height ?? 0
 
-              if (anchorPosition) {
-                window.scrollTo({
-                  top: anchorPosition + window.scrollY - 60,
-                })
-              }
-            })
+                const anchorPosition = document
+                  .querySelector(`#${e.anchor}`)
+                  ?.getBoundingClientRect().top
+
+                if (anchorPosition) {
+                  window.scrollTo({
+                    top: anchorPosition + window.scrollY - navbarHeight,
+                  })
+                }
+              },
+              this.changedRoutes ? 350 : 0
+            )
           }
         }
       })
