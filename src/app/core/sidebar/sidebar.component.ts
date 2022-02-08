@@ -278,18 +278,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
           if (e.anchor) {
             setTimeout(
               () => {
-                const navbarHeight =
-                  document.querySelector('#navbar')?.getBoundingClientRect().height ?? 0
-
-                const anchorPosition = document
-                  .querySelector(`#${e.anchor}`)
-                  ?.getBoundingClientRect().top
-
-                if (anchorPosition) {
-                  window.scrollTo({
-                    top: anchorPosition + window.scrollY - navbarHeight,
-                  })
-                }
+                document.querySelector(`#${e.anchor}`)?.scrollIntoView()
               },
               this.changedRoutes ? 350 : 0
             )

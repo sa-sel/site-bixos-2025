@@ -74,6 +74,10 @@ a:active {
   color: $dark-blue !important;
 }
 
+a[id] {
+  scroll-margin-top: 60px;
+}
+
 img {
   @extend .img-fluid;
 }

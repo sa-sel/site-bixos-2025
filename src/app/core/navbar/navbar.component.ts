@@ -38,13 +38,19 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   private setSticky() {
-    const navbar = this.navbarRef?.nativeElement
+    const navbar = this.navbarRef?.nativeElement as Element
+    const { height } = navbar.getBoundingClientRect()
+
     navbar.classList.add('fixed-top')
 
     const main = document.querySelector('main') || document.querySelector('.main')
     if (main) {
-      main.style.paddingTop = `${navbar.offsetHeight + 16}px`
+      main.style.paddingTop = `${height + 16}px`
     }
+
+    document.querySelectorAll('a[id]').forEach(anchor => {
+      anchor.setAttribute('style', `scroll-margin-top: ${height}px`)
+    })
   }
 
   private unsetSticky() {
@@ -53,7 +59,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
     const main = document.querySelector('main') || document.querySelector('.main')
     if (main) {
-      main.style.paddingTop = '16px'
+      main.style.paddingTop = '0px'
     }
   }
 }
