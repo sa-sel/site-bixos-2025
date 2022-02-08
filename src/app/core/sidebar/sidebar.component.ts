@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core'
-import { NavigationEnd, Router } from '@angular/router'
+import { NavigationEnd, Router, Scroll } from '@angular/router'
 import { SidebarItemModel } from '@models'
 import { SidebarService } from '@services'
 import * as bootstrap from 'bootstrap'
@@ -112,7 +112,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private sidebarService: SidebarService) {}
 
   ngOnInit(): void {
-    // eslint-disable-next-line
     const sidebarElement = document.querySelector('#sidebar')
 
     if (sidebarElement) {
@@ -138,10 +137,30 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
           /* eslint-disable dot-notation */
           this.route = groups['route']
-          this.fragment = groups['fragment']?.replace('#', '')
+          this.fragment = groups['fragment']?.replace('#', '') ?? ''
           /* eslint-enable dot-notation */
 
           this.sidebar.hide()
+        }
+      })
+    )
+
+    this.subscriptions.push(
+      this.router.events.subscribe(e => {
+        if (e instanceof Scroll) {
+          if (e.anchor) {
+            setTimeout(() => {
+              const anchorPosition = document
+                .querySelector(`#${e.anchor}`)
+                ?.getBoundingClientRect().top
+
+              if (anchorPosition) {
+                window.scrollTo({
+                  top: anchorPosition + window.scrollY - 60,
+                })
+              }
+            })
+          }
         }
       })
     )

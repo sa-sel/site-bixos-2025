@@ -175,7 +175,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      anchorScrolling: 'enabled',
+      anchorScrolling: 'disabled',
       onSameUrlNavigation: 'reload',
       paramsInheritanceStrategy: 'always',
       scrollPositionRestoration: 'enabled',
