@@ -3,14 +3,24 @@
     <div *ngIf="!item.modal; else showModal">
       <figure class="d-block m-auto">
         <a *ngIf="item.url" [href]="item.url" target="_blank" rel="noreferrer noopener">
-          <img [src]="item.image.src" [alt]="item.image.alt" />
+          <img
+            [src]="item.image.src"
+            [alt]="item.image.alt"
+            class="img-fluid d-block m-auto"
+          />
         </a>
 
-        <img *ngIf="!item.url" [src]="item.image.src" [alt]="item.image.alt" />
+        <img
+          *ngIf="!item.url"
+          [src]="item.image.src"
+          [alt]="item.image.alt"
+          class="img-fluid d-block m-auto"
+        />
 
         <figcaption
           *ngIf="item.image.caption"
           [innerHTML]="item.image.caption | sanitizeHtml"
+          class="text-muted small text-italic text-center"
         ></figcaption>
       </figure>
     </div>
@@ -26,6 +36,7 @@
         <figcaption
           *ngIf="item.image.caption"
           [innerHTML]="item.image.caption | sanitizeHtml"
+          class="text-muted small text-italic text-center"
         ></figcaption>
       </figure>
     </ng-template>
