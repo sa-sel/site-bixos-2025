@@ -130,7 +130,7 @@ const routes: Routes = [
     },
   },
   {
-    path: 'semana-de-recepcao',
+    path: 'semana-recepcao',
     component: SemanaDeRecepcaoComponent,
     data: {
       background: [
@@ -179,6 +179,7 @@ const routes: Routes = [
       onSameUrlNavigation: 'reload',
       paramsInheritanceStrategy: 'always',
       scrollPositionRestoration: 'enabled',
+      scrollOffset: [0, 75],
     }),
   ],
   exports: [RouterModule],
