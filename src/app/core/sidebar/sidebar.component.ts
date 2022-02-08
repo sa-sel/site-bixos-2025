@@ -17,9 +17,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = []
   sidebar!: bootstrap.Offcanvas
 
-  // TODO: move this to .json file
-  // TODO: make scrolling to fragment stop a little higher (because of navbar)
-  // https://stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
   items: SidebarItemModel[] = [
     {
       title: 'Página Inicial',
@@ -47,7 +44,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Semana de Recepção',
-      icon: 'fas fa-calendar', // far fa-calendar, fas fa-calendar-week
+      icon: 'fas fa-calendar-week',
       route: 'semana-recepcao',
       collapsed: true,
       subitems: [
@@ -63,7 +60,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     },
     // {
     //   title: 'Kit Bixo',
-    //   icon: 'fas fa-tshirt', // fas fa-gifts, fas fa-gift
+    //   icon: 'fas fa-tshirt',
     //   route: 'kit-bixo',
     //   collapsed: true,
     // },
@@ -95,7 +92,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Projeto Ampére',
-      icon: 'fab fa-youtube', // fab fa-youtube-square, fas fa-pen, fas fa-book
+      icon: 'fab fa-youtube',
       route: 'projeto-ampere',
       collapsed: true,
       subitems: [
@@ -118,6 +115,22 @@ export class SidebarComponent implements OnInit, OnDestroy {
         {
           title: 'Cálculo I',
           id: 'calculo1',
+        },
+      ],
+    },
+    {
+      title: 'Preparação Estudos',
+      icon: 'fas fa-book',
+      route: 'preparacao-estudos',
+      collapsed: true,
+      subitems: [
+        {
+          title: 'Introdução',
+          id: 'introducao',
+        },
+        {
+          title: 'Sites e Softwares',
+          id: 'ferramentas',
         },
       ],
     },
@@ -155,7 +168,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     },
     {
       title: 'ICs e Extracurriculares',
-      icon: 'fas fa-microscope', // fas fa-atom
+      icon: 'fas fa-microscope',
       route: 'ics-extras',
       collapsed: true,
       subitems: [
@@ -177,6 +190,12 @@ export class SidebarComponent implements OnInit, OnDestroy {
           id: 'extracurriculares',
         },
       ],
+    },
+    {
+      title: 'Conheça o Campus',
+      icon: 'fas fa-map-marked',
+      route: 'campus',
+      collapsed: true,
     },
     {
       title: 'Bandejão',
