@@ -19,25 +19,50 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   private changedRoutes = true
 
-  // TODO: move this to .json file
-  // TODO: make scrolling to fragment stop a little higher (because of navbar)
-  // https://stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
   items: SidebarItemModel[] = [
     {
       title: 'Página Inicial',
       icon: 'fas fa-home',
       route: '',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Informações Gerais',
+          id: 'introducao',
+        },
+        {
+          title: 'Navegação',
+          id: 'navegacao',
+        },
+        {
+          title: 'FAQ',
+          id: 'faq',
+        },
+        {
+          title: 'Patrocinadores',
+          id: 'patrocinadores',
+        },
+      ],
     },
     {
       title: 'Semana de Recepção',
-      icon: 'fas fa-calendar', // far fa-calendar, fas fa-calendar-week
-      route: 'semana-de-recepcao',
+      icon: 'fas fa-calendar-week',
+      route: 'semana-recepcao',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Cronograma',
+          id: 'cronograma',
+        },
+        {
+          title: 'Apadrinhamento',
+          id: 'apadrinhamento',
+        },
+      ],
     },
     // {
     //   title: 'Kit Bixo',
-    //   icon: 'fas fa-tshirt', // fas fa-gifts, fas fa-gift
+    //   icon: 'fas fa-tshirt',
     //   route: 'kit-bixo',
     //   collapsed: true,
     // },
@@ -49,19 +74,15 @@ export class SidebarComponent implements OnInit, OnDestroy {
       subitems: [
         {
           title: 'Fluxograma',
-          id: 'flowchart',
+          id: 'fluxograma',
         },
         {
           title: 'Datas das chamadas',
-          id: 'dates',
+          id: 'datas',
         },
         {
-          title: 'Matrícula',
-          id: 'enrollment',
-        },
-        {
-          title: 'Local de matrícula',
-          id: 'places',
+          title: 'Confirmação de matrícula',
+          id: 'confirmacao-matricula',
         },
       ],
     },
@@ -73,20 +94,109 @@ export class SidebarComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Projeto Ampére',
-      icon: 'fab fa-youtube', // fab fa-youtube-square, fas fa-pen, fas fa-book
+      icon: 'fab fa-youtube',
       route: 'projeto-ampere',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Pré-Cálculo',
+          id: 'pre-calculo',
+        },
+        {
+          title: 'Geometria Analítica',
+          id: 'geometria-analitica',
+        },
+        {
+          title: 'Programação',
+          id: 'programacao',
+        },
+        {
+          title: 'Física I',
+          id: 'fisica1',
+        },
+        {
+          title: 'Cálculo I',
+          id: 'calculo1',
+        },
+      ],
+    },
+    {
+      title: 'Preparação Estudos',
+      icon: 'fas fa-book',
+      route: 'preparacao-estudos',
+      collapsed: true,
+      subitems: [
+        {
+          title: 'Introdução',
+          id: 'introducao',
+        },
+        {
+          title: 'Sites e Softwares',
+          id: 'ferramentas',
+        },
+      ],
     },
     {
       title: 'Serviços Acadêmicos',
       icon: 'fas fa-user-graduate',
       route: 'servicos-academicos',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Portal de Serviços USP',
+          id: 'portal-servicos',
+        },
+        {
+          title: 'e-Disciplinas (Moodle)',
+          id: 'moodle',
+        },
+        {
+          title: 'Ferramentas Google',
+          id: 'ferramentas-google',
+        },
+        {
+          title: 'Eduroam (Wi-Fi)',
+          id: 'eduroam',
+        },
+        {
+          title: 'MatrUSP',
+          id: 'matrusp',
+        },
+        {
+          title: 'Outros mimos',
+          id: 'mimos',
+        },
+      ],
     },
     {
       title: 'ICs e Extracurriculares',
-      icon: 'fas fa-microscope', // fas fa-atom
+      icon: 'fas fa-microscope',
       route: 'ics-extras',
+      collapsed: true,
+      subitems: [
+        {
+          title: 'Extracurriculares Técnicas',
+          id: 'extracurriculares-tecnicas',
+        },
+        {
+          title:
+            'Centro Acadêmico, Secretarias Acadêmicas, Coletivos e Grupos Religiosos',
+          id: 'centro-academico',
+        },
+        {
+          title: 'Iniciações Científicas',
+          id: 'iniciacao-cientifica',
+        },
+        {
+          title: 'Grupos Extracurriculares',
+          id: 'extracurriculares',
+        },
+      ],
+    },
+    {
+      title: 'Conheça o Campus',
+      icon: 'fas fa-map-marked',
+      route: 'campus',
       collapsed: true,
     },
     {
@@ -106,6 +216,20 @@ export class SidebarComponent implements OnInit, OnDestroy {
       icon: 'fas fa-house-user',
       route: 'moradias',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Alojamento Estudantil no Campus',
+          id: 'alojamento',
+        },
+        {
+          title: 'Grupos no Facebook',
+          id: 'grupos-facebook',
+        },
+        {
+          title: 'Imobiliárias de São Carlos',
+          id: 'imobiliarias',
+        },
+      ],
     },
   ]
 
