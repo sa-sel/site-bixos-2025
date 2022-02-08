@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {
-  BannerRouterComponent,
   BandejaoComponent,
+  BannerRouterComponent,
   BibliotecasComponent,
   CampusComponent,
   FooterComponent,
@@ -13,12 +13,13 @@ import {
   MatriculaComponent,
   MoradiasComponent,
   NavbarComponent,
+  PageTitleComponent,
   PreparacaoEstudosComponent,
+  ProjetoAmpereComponent,
   SemanaDeRecepcaoComponent,
   ServicosAcademicosComponent,
   SidebarComponent,
   SobreCursoComponent,
-  ProjetoAmpereComponent,
 } from '@core'
 import { SanitizeHtmlPipe } from '@pipes'
 import {
@@ -56,7 +57,9 @@ import { AppComponent } from './app.component'
     ModalComponent,
     MoradiasComponent,
     NavbarComponent,
+    PageTitleComponent,
     PreparacaoEstudosComponent,
+    ProjetoAmpereComponent,
     SanitizeHtmlPipe,
     SemanaDeRecepcaoComponent,
     ServicosAcademicosComponent,
@@ -64,9 +67,6 @@ import { AppComponent } from './app.component'
     SobreCursoComponent,
     SocialMediaIconComponent,
     TitleComponent,
-    HomeComponent,
-    BibliotecasComponent,
-    ProjetoAmpereComponent,
   ],
   imports: [
     AppRoutingModule,
