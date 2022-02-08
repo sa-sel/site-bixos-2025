@@ -21,9 +21,9 @@ const routes: (RouteModel | Route)[] = [
     path: '',
     component: HomeComponent,
     data: {
-      title: 'Recepção dos Bixos - Elétrica 2022',
+      title: 'Recepção dos Bixos da Engenharia Elétrica 2022',
       background: [
-        { src: '/assets/images/banner.jpg', alt: 'Membros da SA-SEL em 2019' },
+        { src: '/assets/images/home/banner.jpg', alt: 'Membros da SA-SEL em 2019' },
       ],
     },
   },
@@ -136,7 +136,7 @@ const routes: (RouteModel | Route)[] = [
     },
   },
   {
-    path: 'semana-de-recepcao',
+    path: 'semana-recepcao',
     component: SemanaDeRecepcaoComponent,
     data: {
       title: 'Semana de Recepção',
@@ -189,6 +189,7 @@ const routes: (RouteModel | Route)[] = [
       onSameUrlNavigation: 'reload',
       paramsInheritanceStrategy: 'always',
       scrollPositionRestoration: 'enabled',
+      scrollOffset: [0, 75],
     }),
   ],
   exports: [RouterModule],
