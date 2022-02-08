@@ -93,7 +93,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
       collapsed: true,
     },
     {
-      title: 'Projeto Ampére',
+      title: 'Projeto Ampere',
       icon: 'fab fa-youtube',
       route: 'projeto-ampere',
       collapsed: true,
@@ -258,7 +258,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.router.events.subscribe(e => {
         if (e instanceof NavigationEnd) {
-          const regexp = /\/(?<route>\w*)(?<fragment>#.+)?/
+          const regexp = /\/(?<route>[^#]*)(?<fragment>#.+)?/
           const groups = regexp.exec(e.urlAfterRedirects)?.groups ?? {}
 
           /* eslint-disable dot-notation */
