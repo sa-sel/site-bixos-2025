@@ -2,9 +2,12 @@
   <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0" *ngFor="let item of gridItems">
     <div *ngIf="!item.modal; else showModal">
       <figure class="d-block m-auto">
-        <a [href]="item.url" target="_blank" rel="noreferrer noopener">
+        <a *ngIf="item.url" [href]="item.url" target="_blank" rel="noreferrer noopener">
           <img [src]="item.image.src" [alt]="item.image.alt" />
         </a>
+
+        <img *ngIf="!item.url" [src]="item.image.src" [alt]="item.image.alt" />
+
         <figcaption
           *ngIf="item.image.caption"
           [innerHTML]="item.image.caption | sanitizeHtml"
