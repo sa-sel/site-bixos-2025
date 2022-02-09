@@ -9,6 +9,7 @@ export class BibliotecasComponent {
   textAndImageList: AlternatingLayoutModel[] = [
     {
       title: 'Salas de Estudos',
+      anchor: 'salas-estudos',
       subtitle: true,
       image: {
         alt: 'interior do aquario',
@@ -19,6 +20,7 @@ export class BibliotecasComponent {
     },
     {
       title: 'Pró Aluno - EESC',
+      anchor: 'pro-aluno',
       subtitle: true,
       image: {
         alt: 'pro aluno eesc',

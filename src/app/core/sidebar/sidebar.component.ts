@@ -91,6 +91,20 @@ export class SidebarComponent implements OnInit, OnDestroy {
       icon: 'fas fa-graduation-cap',
       route: 'curso',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Separação por Ênfases',
+          id: 'separacao-enfases',
+        },
+        {
+          title: 'Grade Curricular',
+          id: 'grade-curricular',
+        },
+        {
+          title: 'Certificados Especiais',
+          id: 'certificados-especiais',
+        },
+      ],
     },
     {
       title: 'Projeto Ampere',
@@ -210,6 +224,16 @@ export class SidebarComponent implements OnInit, OnDestroy {
       icon: 'fas fa-book-reader',
       route: 'bibliotecas',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Salas de Estudos',
+          id: 'salas-estudos',
+        },
+        {
+          title: 'Pró Aluno - EESC',
+          id: 'pro-aluno',
+        },
+      ],
     },
     {
       title: 'Moradias',

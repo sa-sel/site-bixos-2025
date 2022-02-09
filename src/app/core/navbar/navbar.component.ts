@@ -59,7 +59,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
     const main = document.querySelector('main') || document.querySelector('.main')
     if (main) {
-      main.style.paddingTop = '0px'
+      main.style.paddingTop = '16px'
     }
   }
 }

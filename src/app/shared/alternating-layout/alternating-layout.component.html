@@ -1,5 +1,7 @@
 <div class="text-justify my-1 d-flex flex-column gap-3 gap-md-5 px-3">
   <div *ngFor="let item of contents">
+    <a *ngIf="item.anchor" [id]="item.anchor"></a>
+
     <!--Only image-->
     <div *ngIf="item.image && !item.text">
       <app-title *ngIf="item.title" [subtitle]="!!item.subtitle">{{
