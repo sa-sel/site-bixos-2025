@@ -18,16 +18,14 @@
     você pode fazer nesse site que reune a maioria dos serviços oferecidos pela
     universidade.
   </p>
-  <br />
 
-  <figure>
-    <img
-      src="/assets/images/servicos-academicos/portal.png"
-      alt="Página do Portal de Serviços da USP"
-      class="d-block w-100 mx-auto"
-    />
-    <figcaption>Página inicial do portal de serviços da USP</figcaption>
-  </figure>
+  <app-figure
+    [image]="{
+      src: '/assets/images/servicos-academicos/portal.png',
+      alt: 'Página do Portal de Serviços da USP',
+      caption: 'Página inicial do portal de serviços da USP'
+    }"
+  ></app-figure>
 
   <section>
     <h5>Calendário</h5>
@@ -160,16 +158,14 @@
     complemento à sala de aula.
   </p>
 
-  <figure>
-    <img
-      src="/assets/images/servicos-academicos/moodle.png"
-      alt="Página inicial do edisciplinas"
-      class="d-block w-100 my-2 mx-auto"
-    />
-    <figcaption>
-      Cada disciplina tem seu próprio espaço, em que você será adicionado automaticamente.
-    </figcaption>
-  </figure>
+  <app-figure
+    [image]="{
+      src: '/assets/images/servicos-academicos/moodle.png',
+      alt: 'Página inicial do edisciplinas',
+      caption:
+        'Cada disciplina tem seu próprio espaço, em que você será adicionado automaticamente.'
+    }"
+  ></app-figure>
 
   <p>
     Apesar do e-Disciplinas ser a plataforma mais utilizada pelos professores, não é a
@@ -241,11 +237,13 @@
     isso quando for fazer matrícula nas disciplinas do 2º semestre e adiante).
   </p>
 
-  <img
-    src="/assets/images/servicos-academicos/matrusp.png"
-    alt="Exemplo de como o matrUSP é utlizado"
-    class="d-block w-100 my-2 mx-auto"
-  />
+  <app-figure
+    [image]="{
+      src: '/assets/images/servicos-academicos/matrusp.png',
+      alt: 'Exemplo de como o matrUSP é utlizado',
+      caption: 'Grade curricular no MatrUSP'
+    }"
+  ></app-figure>
 
   <p>
     Caso tenha interesse, você pode se matricular em disciplinas obrigatórias com turmas

@@ -82,18 +82,6 @@ img {
   @extend .img-fluid;
 }
 
-figure img {
-  display: block;
-  margin: auto;
-}
-
-figcaption {
-  @extend .text-muted;
-  @extend .small;
-  font-style: italic;
-  text-align: center;
-}
-
 .overflow-hidden {
   overflow: hidden hidden;
 }

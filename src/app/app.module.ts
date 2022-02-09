@@ -25,6 +25,7 @@ import { SanitizeHtmlPipe } from '@pipes'
 import {
   AlternatingLayoutComponent,
   BannerComponent,
+  FigureComponent,
   ImageGridComponent,
   LogoComponent,
   ModalComponent,
@@ -47,6 +48,7 @@ import { AppComponent } from './app.component'
     BannerRouterComponent,
     BibliotecasComponent,
     CampusComponent,
+    FigureComponent,
     FooterComponent,
     GroupsPanelComponent,
     HomeComponent,
