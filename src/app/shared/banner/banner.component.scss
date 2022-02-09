@@ -46,6 +46,10 @@
     font-size: 60pt;
 
     @include media-breakpoint-up(md) {
+      font-size: 70pt;
+    }
+
+    @include media-breakpoint-up(lg) {
       font-size: 90pt;
     }
 

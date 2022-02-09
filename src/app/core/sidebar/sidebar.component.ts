@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core'
-import { NavigationEnd, Router } from '@angular/router'
+import { NavigationEnd, Router, Scroll } from '@angular/router'
 import { SidebarItemModel } from '@models'
 import { SidebarService } from '@services'
 import * as bootstrap from 'bootstrap'
@@ -16,6 +16,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
   startsOpen = this.sidebarService.isOpen()
   subscriptions: Subscription[] = []
   sidebar!: bootstrap.Offcanvas
+
+  private changedRoutes = true
 
   items: SidebarItemModel[] = [
     {
@@ -89,9 +91,23 @@ export class SidebarComponent implements OnInit, OnDestroy {
       icon: 'fas fa-graduation-cap',
       route: 'curso',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Separação por Ênfases',
+          id: 'separacao-enfases',
+        },
+        {
+          title: 'Grade Curricular',
+          id: 'grade-curricular',
+        },
+        {
+          title: 'Certificados Especiais',
+          id: 'certificados-especiais',
+        },
+      ],
     },
     {
-      title: 'Projeto Ampére',
+      title: 'Projeto Ampere',
       icon: 'fab fa-youtube',
       route: 'projeto-ampere',
       collapsed: true,
@@ -208,6 +224,16 @@ export class SidebarComponent implements OnInit, OnDestroy {
       icon: 'fas fa-book-reader',
       route: 'bibliotecas',
       collapsed: true,
+      subitems: [
+        {
+          title: 'Salas de Estudos',
+          id: 'salas-estudos',
+        },
+        {
+          title: 'Pró Aluno - EESC',
+          id: 'pro-aluno',
+        },
+      ],
     },
     {
       title: 'Moradias',
@@ -236,7 +262,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private sidebarService: SidebarService) {}
 
   ngOnInit(): void {
-    // eslint-disable-next-line
     const sidebarElement = document.querySelector('#sidebar')
 
     if (sidebarElement) {
@@ -257,15 +282,31 @@ export class SidebarComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.router.events.subscribe(e => {
         if (e instanceof NavigationEnd) {
-          const regexp = /\/(?<route>\w*)(?<fragment>#.+)?/
+          const regexp = /\/(?<route>[^#]*)(?<fragment>#.+)?/
           const groups = regexp.exec(e.urlAfterRedirects)?.groups ?? {}
 
           /* eslint-disable dot-notation */
+          this.changedRoutes = this.route !== groups['route']
           this.route = groups['route']
-          this.fragment = groups['fragment']?.replace('#', '')
+          this.fragment = groups['fragment']?.replace('#', '') ?? ''
           /* eslint-enable dot-notation */
 
           this.sidebar.hide()
+        }
+      })
+    )
+
+    this.subscriptions.push(
+      this.router.events.subscribe(e => {
+        if (e instanceof Scroll) {
+          if (e.anchor) {
+            setTimeout(
+              () => {
+                document.querySelector(`#${e.anchor}`)?.scrollIntoView()
+              },
+              this.changedRoutes ? 350 : 0
+            )
+          }
         }
       })
     )
