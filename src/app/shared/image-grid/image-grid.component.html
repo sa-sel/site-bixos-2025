@@ -1,5 +1,12 @@
-<div class="row p-5 justify-content-center align-items-center gap-3">
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0" *ngFor="let item of gridItems">
+<div
+  class="row px-2 my-4 justify-content-center align-items-center"
+  [ngClass]="large ? 'gap-2' : 'gap-5'"
+>
+  <div
+    *ngFor="let item of gridItems"
+    class="{{ item.fill ? 'flex-fill' : '' }} p-0"
+    [ngClass]="large ? 'col-12 col-md-3' : 'col-4 col-md-2 p-lg-3'"
+  >
     <div *ngIf="!item.modal; else showModal">
       <figure class="d-block m-auto">
         <a *ngIf="item.url" [href]="item.url" target="_blank" rel="noreferrer noopener">

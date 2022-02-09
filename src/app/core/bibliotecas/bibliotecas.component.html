@@ -9,7 +9,7 @@
   >), assim, você não precisa se preocupar em comprar livros ou apostilas.
 </p>
 
-<app-image-grid [gridItems]="libraries"></app-image-grid>
+<app-image-grid [gridItems]="libraries" [large]="true"></app-image-grid>
 
 <p>
   Na sua primeira visita a uma biblioteca da USP, você poderá fazer seu cadastro, te
@@ -39,6 +39,6 @@
   Você pode pesquisar por livros no acervo, ver e renovar seus empréstimos, e solicitar
   reserva de um livro indisponível no momento por meio de 2 plataformas.
 </p>
-<app-image-grid [gridItems]="searchOptions"></app-image-grid>
+<app-image-grid [gridItems]="searchOptions" [large]="true"></app-image-grid>
 
 <app-alternating-layout [contents]="textAndImageList"></app-alternating-layout>
