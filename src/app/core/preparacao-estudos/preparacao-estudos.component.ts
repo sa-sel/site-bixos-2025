@@ -87,7 +87,7 @@ export class PreparacaoEstudosComponent {
     },
     {
       image: {
-        src: '/assets/images/preparacao/Pomofocus.png',
+        src: '/assets/images/preparacao/OneNote.png',
         alt: 'onenote',
         caption: 'Onenote',
       },

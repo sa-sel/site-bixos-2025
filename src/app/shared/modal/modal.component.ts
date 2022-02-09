@@ -45,5 +45,17 @@ export class ModalComponent implements OnChanges {
         this.isOpenChange.emit(this.isOpen)
       })
     }
+
+    if (this.url && this.image) {
+      const addition = `
+        <a href="${this.url}" target="_blank" rel="noopener noreferrer" class="text-reset">
+          <em>[link]</em>
+        </a>
+      `
+      this.image.caption = this.image?.caption
+        ? `${this.image.caption} ${addition}`
+        : addition
+      console.log(this.image.caption)
+    }
   }
 }
