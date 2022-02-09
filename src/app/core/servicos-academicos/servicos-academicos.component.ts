@@ -75,6 +75,22 @@ export class ServicosAcademicosComponent {
     },
     {
       image: {
+        src: '/assets/images/servicos-academicos/downdog.svg',
+        alt: 'Logo do Downdog',
+        caption: 'Downdog',
+      },
+      modal: {
+        image: {
+          src: '/assets/images/servicos-academicos/downdog.svg',
+          alt: 'Logo do Downdog',
+        },
+        text: 'Possui aplicativos de Yoga, HIIT, Meditação, Barre e Yoga pré-natal. Usando o e-mail USP, você tem acesso gratuito a todos os aplicativos até dia 1° de julho de 2021.',
+        title: 'Downdog',
+        url: 'https://www.downdogapp.com/',
+      },
+    },
+    {
+      image: {
         src: '/assets/images/servicos-academicos/github.svg',
         alt: 'Logo do Github',
         caption: 'Github',
@@ -203,13 +219,13 @@ export class ServicosAcademicosComponent {
     },
     {
       image: {
-        src: '/assets/images/servicos-academicos/uspnet.svg',
+        src: '/assets/images/servicos-academicos/usp.svg',
         alt: 'Logo da USP',
         caption: 'VPN USPnet',
       },
       modal: {
         image: {
-          src: '/assets/images/servicos-academicos/uspnet.svg',
+          src: '/assets/images/servicos-academicos/usp.svg',
           alt: 'Logo da USP',
         },
         text: 'A USP possui o VPN USPnet que permite o acesso a bases de dados, livros eletrônicos e revistas eletrônicas',

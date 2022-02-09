@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import {
-  BandejaoComponent,
-  BibliotecasComponent,
-  CampusComponent,
-  HomeComponent,
-  IcExtraComponent,
-  MatriculaComponent,
-  MoradiasComponent,
-  OuvidoriaComponent,
-  PreparacaoEstudosComponent,
-  ProjetoAmpereComponent,
-  SemanaDeRecepcaoComponent,
-  ServicosAcademicosComponent,
-  SobreCursoComponent,
+    BandejaoComponent,
+    BibliotecasComponent,
+    CampusComponent,
+    HomeComponent,
+    IcExtraComponent,
+    MatriculaComponent,
+    MoradiasComponent,
+    OuvidoriaComponent,
+    PreparacaoEstudosComponent,
+    ProjetoAmpereComponent,
+    SemanaDeRecepcaoComponent,
+    ServicosAcademicosComponent,
+    SobreCursoComponent
 } from '@core'
 import { RouteModel } from '@models'
 
@@ -99,7 +99,7 @@ const routes: RouteModel[] = [
     data: {
       title: 'Preparação para os Estudos',
       background: [
-        { src: '/assets/images/preparacao/banner.png', alt: 'Banner da preparacao' },
+        { src: '/assets/images/preparacao/banner.jpg', alt: 'Banner da preparacao' },
       ],
     },
   },

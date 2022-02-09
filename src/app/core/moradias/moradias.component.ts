@@ -53,7 +53,7 @@ export class MoradiasComponent {
   realStateAgencies: ImageGridItemModel[] = [
     {
       image: {
-        src: '/assets/images/moradias/imobi1.png',
+        src: '/assets/images/moradias/abias.svg',
         alt: 'abias imoveis',
         caption: 'Abias Imóveis',
       },
@@ -61,7 +61,7 @@ export class MoradiasComponent {
     },
     {
       image: {
-        src: '/assets/images/moradias/imobi2.png',
+        src: '/assets/images/moradias/roca.svg',
         alt: 'roca',
         caption: 'Imobiliária Roca',
       },
@@ -69,7 +69,7 @@ export class MoradiasComponent {
     },
     {
       image: {
-        src: '/assets/images/moradias/imobi3.png',
+        src: '/assets/images/moradias/cardinali.svg',
         alt: 'cardinali',
         caption: 'Imobiliária Cardinali',
       },
@@ -77,7 +77,7 @@ export class MoradiasComponent {
     },
     {
       image: {
-        src: '/assets/images/moradias/imobi4.png',
+        src: '/assets/images/moradias/maria-aires.svg',
         alt: 'maria aires',
         caption: 'Maria Aires',
       },
@@ -85,15 +85,15 @@ export class MoradiasComponent {
     },
     {
       image: {
-        src: '/assets/images/moradias/imobi5.png',
-        alt: 'predial',
-        caption: 'Predial Imóveis',
+        src: '/assets/images/moradias/contato.svg',
+        alt: 'contato',
+        caption: 'Contato Imóveis',
       },
-      url: 'https://predialsaocarlos.com/',
+      url: 'https://www.icontato.com.br/',
     },
     {
       image: {
-        src: '/assets/images/moradias/imobi6.png',
+        src: '/assets/images/moradias/uniao.svg',
         alt: 'união',
         caption: 'Imobiliária União',
       },

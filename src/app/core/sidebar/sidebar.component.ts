@@ -49,16 +49,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
       icon: 'fas fa-calendar-week',
       route: 'semana-recepcao',
       collapsed: true,
-      subitems: [
-        {
-          title: 'Cronograma',
-          id: 'cronograma',
-        },
-        {
-          title: 'Apadrinhamento',
-          id: 'apadrinhamento',
-        },
-      ],
     },
     {
       title: 'Ouvidoria',
