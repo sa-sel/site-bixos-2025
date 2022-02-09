@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import {
-    BandejaoComponent,
-    BibliotecasComponent,
-    CampusComponent,
-    HomeComponent,
-    IcExtraComponent,
-    MatriculaComponent,
-    MoradiasComponent,
-    OuvidoriaComponent,
-    PreparacaoEstudosComponent,
-    ProjetoAmpereComponent,
-    SemanaDeRecepcaoComponent,
-    ServicosAcademicosComponent,
-    SobreCursoComponent
+  BandejaoComponent,
+  BibliotecasComponent,
+  CampusComponent,
+  HomeComponent,
+  IcExtraComponent,
+  MatriculaComponent,
+  MoradiasComponent,
+  OuvidoriaComponent,
+  PreparacaoEstudosComponent,
+  ProjetoAmpereComponent,
+  SemanaDeRecepcaoComponent,
+  ServicosAcademicosComponent,
+  SobreCursoComponent,
 } from '@core'
 import { RouteModel } from '@models'
 
@@ -110,27 +110,27 @@ const routes: RouteModel[] = [
       title: 'Conheça o Campus',
       background: [
         { src: 'assets/images/campus/banner.jpg', alt: 'Evento no campus' },
-        { src: 'assets/images/campus/Prédio_E1.png', alt: 'Prédio E1' },
+        { src: 'assets/images/campus/Prédio_E1.jpg', alt: 'Prédio E1' },
         {
-          src: 'assets/images/campus/Prédio_Eng_Elétr_Comp.png',
+          src: 'assets/images/campus/Prédio_Eng_Elétr_Comp.jpg',
           alt: 'Prédio Eng. Elétrica e Comp',
         },
         {
-          src: 'assets/images/campus/Entrada_Arquitetura.png',
+          src: 'assets/images/campus/Entrada_Arquitetura.jpg',
           alt: 'Entrada Arquitetura',
         },
-        { src: 'assets/images/campus/Sala_Bloco_D.png', alt: 'Sala Bloco D' },
-        { src: 'assets/images/campus/Praça_Campus_2.png', alt: 'Praça Campus 2' },
+        { src: 'assets/images/campus/Sala_Bloco_D.jpg', alt: 'Sala Bloco D' },
+        { src: 'assets/images/campus/Praça_Campus_2.jpg', alt: 'Praça Campus 2' },
         {
-          src: 'assets/images/campus/Ponto_Ônibus_Campus_2.png',
+          src: 'assets/images/campus/Ponto_Ônibus_Campus_2.jpg',
           alt: 'Ponto de Ônibus Campus 2',
         },
         {
-          src: 'assets/images/campus/Bancada_Lab_Fís.png',
+          src: 'assets/images/campus/Bancada_Lab_Fís.jpg',
           alt: 'Bancada Laboratório de Física',
         },
         {
-          src: 'assets/images/campus/Bancada_Lab_Quím.png',
+          src: 'assets/images/campus/Bancada_Lab_Quím.jpg',
           alt: 'Bancada Laboratório de Química',
         },
       ],
@@ -143,7 +143,7 @@ const routes: RouteModel[] = [
       title: 'Semana de Recepção',
       background: [
         {
-          src: '/assets/images/semana-de-recepcao/banner.png',
+          src: '/assets/images/semana-de-recepcao/banner.jpg',
           alt: 'Foto de uma gincana da semana de recepção',
         },
       ],
@@ -177,7 +177,7 @@ const routes: RouteModel[] = [
     component: MoradiasComponent,
     data: {
       title: 'Moradias',
-      background: [{ src: '/assets/images/moradias/moradias.jpg', alt: 'Foto da USP' }],
+      background: [{ src: '/assets/images/moradias/banner.jpg', alt: 'Foto da USP' }],
     },
   },
   {

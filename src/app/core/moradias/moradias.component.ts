@@ -22,28 +22,28 @@ export class MoradiasComponent {
   housingPhotos: ImageGridItemModel[] = [
     {
       image: {
-        src: '/assets/images/moradias/aloja1.png',
+        src: '/assets/images/moradias/aloja1.jpg',
         alt: 'foto do alojamento',
         caption: 'Bloco do alojamento da USP',
       },
     },
     {
       image: {
-        src: '/assets/images/moradias/aloja2.png',
+        src: '/assets/images/moradias/aloja2.jpg',
         alt: 'bloco e',
         caption: 'Bloco E',
       },
     },
     {
       image: {
-        src: '/assets/images/moradias/aloja3.png',
+        src: '/assets/images/moradias/aloja3.jpg',
         alt: 'aloja à noite',
         caption: 'Aloja à noite',
       },
     },
     {
       image: {
-        src: '/assets/images/moradias/aloja4.png',
+        src: '/assets/images/moradias/aloja4.jpg',
         alt: 'arvore',
         caption: 'Árvore do aloja',
       },

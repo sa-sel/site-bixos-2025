@@ -1,11 +1,12 @@
 import {
-    Component,
-    EventEmitter,
-    Input,
-    OnChanges, Output,
-    SimpleChanges,
-    TemplateRef,
-    ViewChild
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges,
+  TemplateRef,
+  ViewChild,
 } from '@angular/core'
 import { ImageModel } from '@models'
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal'
@@ -51,7 +52,9 @@ export class ModalComponent implements OnChanges {
           <em>[link]</em>
         </a>
       `
-      this.image.caption = this.image?.caption ? `${this.image.caption} ${addition}` : addition
+      this.image.caption = this.image?.caption
+        ? `${this.image.caption} ${addition}`
+        : addition
       console.log(this.image.caption)
     }
   }
