@@ -18,5 +18,9 @@ export class GroupsPanelComponent implements OnInit {
       name: SocialMedia.Facebook,
       url: 'https://www.facebook.com/groups/grupodosbixos2022/',
     },
+    {
+      name: SocialMedia.Discord,
+      url: 'https://discord.gg/G3eegNxgET',
+    },
   ]
 }
