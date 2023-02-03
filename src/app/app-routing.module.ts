@@ -6,6 +6,7 @@ import {
   CampusComponent,
   HomeComponent,
   IcExtraComponent,
+  KitBixoComponent,
   MatriculaComponent,
   MoradiasComponent,
   OuvidoriaComponent,
@@ -193,6 +194,18 @@ const routes: RouteModel[] = [
         alt: 'Comissão Minerva',
       },
       bgDarkness: 0.4,
+    },
+  },
+  {
+    path: 'kit-bixo',
+    component: KitBixoComponent,
+    data: {
+      title: 'Kit Bixo',
+      background: [
+        {
+          src: '/assets/images/kit-bixo/banner.jpg',
+        },
+      ],
     },
   },
   { path: '**', redirectTo: '/' } as any,
