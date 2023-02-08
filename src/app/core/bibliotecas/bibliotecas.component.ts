@@ -27,7 +27,18 @@ export class BibliotecasComponent {
         src: 'assets/images/bibliotecas/proaluno.jpg',
         caption: 'Entrada do Pró Aluno - EESC',
       },
-      text: 'Pertinho da biblioteca da EESC e do aquário, está o espaço Pró-Aluno. Lá, há 2 salas informatizadas para uso de computadores. Para acessá-los, basta fazer login com sua conta USP.<br><br>Cada computador está conectado à impressora do espaço. Todo semestre, cada aluno pode realizar <strong>gratuitamente</strong> a impressão de <strong>100 páginas</strong>.<br><br>No bloco 6 do ICMC, também há salas informatizadas no último andar que podem ser acessadas por alunos.',
+      text: 'Pertinho da biblioteca da EESC e do aquário, está o espaço Pró-Aluno. Lá, há 2 salas informatizadas para uso de computadores. Para acessá-los, basta fazer login com sua conta USP.<br><br>Cada computador está conectado à impressora do espaço. Todo semestre, cada aluno pode realizar <strong>gratuitamente</strong> a impressão de <strong>100 páginas</strong>.',
+    },
+    {
+      title: 'Bloco 6 - ICMC',
+      anchor: 'bloco-6',
+      subtitle: true,
+      image: {
+        alt: 'bloco 6 icmc',
+        src: 'assets/images/bibliotecas/bloco6.jpg',
+        caption: 'Entrada do Bloco 6 - ICMC',
+      },
+      text: 'No bloco 6 do ICMC, também há salas informatizadas no último andar que podem ser acessadas por alunos.',
     },
   ]
 
@@ -36,7 +47,7 @@ export class BibliotecasComponent {
       image: {
         src: '/assets/images/bibliotecas/eesc.jpg',
         alt: 'biblioteca eesc',
-        caption: 'Biblioteca EESC',
+        caption: 'Antiga Biblioteca EESC',
       },
       fill: true,
     },
@@ -53,6 +64,25 @@ export class BibliotecasComponent {
         src: '/assets/images/bibliotecas/ifsc.jpg',
         alt: 'biblioteca ifsc',
         caption: 'Biblioteca IFSC',
+      },
+      fill: true,
+    },
+  ]
+
+  eesclibrary: ImageGridItemModel[] = [
+    {
+      image: {
+        alt: 'reforma biblioteca eesc',
+        src: 'assets/images/bibliotecas/reformabibliotecaeesc.jpg',
+        caption: 'Atual Biblioteca EESC em reforma',
+      },
+      fill: true,
+    },
+    {
+      image: {
+        alt: 'biblioteca provisória espaço primavera',
+        src: 'assets/images/bibliotecas/bibliotecaespacoprimavera.jpg',
+        caption: 'Biblioteca EESC atendendo provisoriamente no Espaço Primavera',
       },
       fill: true,
     },

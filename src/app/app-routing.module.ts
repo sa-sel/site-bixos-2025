@@ -22,7 +22,7 @@ const routes: RouteModel[] = [
     path: '',
     component: HomeComponent,
     data: {
-      title: 'Recepção dos Bixos da Elétrica - 2022',
+      title: 'Recepção dos Bixos da Elétrica - 2023',
       background: [
         { src: '/assets/images/home/banner.jpg', alt: 'Membros da SA-SEL em 2019' },
       ],
@@ -188,10 +188,6 @@ const routes: RouteModel[] = [
       background: [
         { src: '/assets/images/ouvidoria/banner.jpg', alt: 'Reunião na sala da SA-SEL' },
       ],
-      logo: {
-        src: '/assets/images/ouvidoria/logo.svg',
-        alt: 'Comissão Minerva',
-      },
       bgDarkness: 0.4,
     },
   },
