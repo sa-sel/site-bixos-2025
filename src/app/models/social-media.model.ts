@@ -6,6 +6,7 @@ export enum SocialMedia {
   Instagram = 'Instagram',
   LinkedIn = 'LinkedIn',
   WhatsApp = 'WhatsApp',
+  WhatsAppGroup = 'WhatsAppGroup',
   YouTube = 'YouTube',
 }
 
@@ -28,6 +29,7 @@ export const SocialMediaIconMap: Record<SocialMedia, SocialMediaIcons> = {
   [SocialMedia.Instagram]: SocialMediaIcons.Instagram,
   [SocialMedia.LinkedIn]: SocialMediaIcons.LinkedIn,
   [SocialMedia.WhatsApp]: SocialMediaIcons.WhatsApp,
+  [SocialMedia.WhatsAppGroup]: SocialMediaIcons.WhatsApp,
   [SocialMedia.YouTube]: SocialMediaIcons.YouTube,
 }
 
