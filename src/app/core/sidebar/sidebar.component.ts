@@ -229,6 +229,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
           title: 'Pró Aluno - EESC',
           id: 'pro-aluno',
         },
+        {
+          title: 'Bloco 6 - ICMC',
+          id: 'bloco-6',
+        },
       ],
     },
     {

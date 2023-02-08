@@ -9,9 +9,9 @@ import { SocialMedia, SocialMediaModel } from '@models'
 export class FooterComponent {
   socialMedia: SocialMediaModel[] = [
     { name: SocialMedia.Facebook, url: 'https://www.facebook.com/sasel.usp' },
-    { name: SocialMedia.Instagram, url: 'https://www.instagram.com/saselusp/' },
-    { name: SocialMedia.WhatsApp, url: '+55 (71) 8155-6248' },
-    { name: SocialMedia.Email, url: 'sasel@eesc.usp.br' },
+    { name: SocialMedia.Instagram, url: 'https://www.instagram.com/sasel.usp/' },
+    { name: SocialMedia.WhatsApp, url: '+55 (16) 99991-2135' },
+    { name: SocialMedia.Email, url: 'sasel.usp@gmail.com' },
     {
       name: SocialMedia.YouTube,
       url: 'https://www.youtube.com/channel/UCCIw2l3rNCepuZsugA4BC7w',
