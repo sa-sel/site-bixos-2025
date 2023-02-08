@@ -15,12 +15,12 @@ export class GroupsPanelComponent implements OnInit {
 
   groups: SocialMediaModel[] = [
     {
-      name: SocialMedia.Facebook,
-      url: 'https://www.facebook.com/groups/grupodosbixos2022/',
+      name: SocialMedia.Instagram,
+      url: 'https://www.instagram.com/eletrica_usp2023/',
     },
     {
-      name: SocialMedia.Discord,
-      url: 'https://discord.gg/G3eegNxgET',
+      name: SocialMedia.WhatsAppGroup,
+      url: 'https://chat.whatsapp.com/HtTe99b0i9SKbREPlFX2RW',
     },
   ]
 }
