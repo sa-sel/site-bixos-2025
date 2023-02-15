@@ -56,12 +56,26 @@ export class SidebarComponent implements OnInit, OnDestroy {
       route: 'ouvidoria',
       collapsed: true,
     },
-    // {
-    //   title: 'Kit Bixo',
-    //   icon: 'fas fa-tshirt',
-    //   route: 'kit-bixo',
-    //   collapsed: true,
-    // },
+    {
+      title: 'Kit Bixo',
+      icon: 'fas fa-tshirt',
+      route: 'kit-bixo',
+      collapsed: true,
+      subitems: [
+        {
+          title: 'Compra do Kit Bixo',
+          id: 'compra-de-kits',
+        },
+        {
+          title: 'Edições Anteriores',
+          id: 'edicoes-anteriores',
+        },
+        {
+          title: 'Cervejada da Elétrica',
+          id: 'cervejada',
+        },
+      ],
+    },
     {
       title: 'Matrícula',
       icon: 'fas fa-passport',

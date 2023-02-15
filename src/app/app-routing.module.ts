@@ -6,6 +6,7 @@ import {
   CampusComponent,
   HomeComponent,
   IcExtraComponent,
+  KitBixoComponent,
   MatriculaComponent,
   MoradiasComponent,
   OuvidoriaComponent,
@@ -189,6 +190,18 @@ const routes: RouteModel[] = [
         { src: '/assets/images/ouvidoria/banner.jpg', alt: 'Reunião na sala da SA-SEL' },
       ],
       bgDarkness: 0.4,
+    },
+  },
+  {
+    path: 'kit-bixo',
+    component: KitBixoComponent,
+    data: {
+      title: 'Kit Bixo',
+      background: [
+        {
+          src: '/assets/images/kit-bixo/banner.jpg',
+        },
+      ],
     },
   },
   { path: '**', redirectTo: '/' } as any,
