@@ -1,6 +1,10 @@
 <div class="d-flex flex-column align-items-center gap-2 {{ color }} pb-2">
   <strong style="font-size: {{ size - 5 }}px">
-    {{ groups.length === 1 ? 'GRUPO DOS BIXOS' : 'GRUPOS DOS BIXOS' }}
+    {{
+      groups.length === 1
+        ? 'INSTAGRAM DA RECEPÇÃO E GRUPO DOS BIXOS'
+        : 'INSTAGRAM DA RECEPÇÃO E GRUPO DOS BIXOS'
+    }}
   </strong>
 
   <div class="d-flex justify-content-center align-items-center m-auto gap-5">
