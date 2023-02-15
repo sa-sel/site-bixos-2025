@@ -70,6 +70,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
           title: 'Edições Anteriores',
           id: 'edicoes-anteriores',
         },
+        {
+          title: 'Cervejada da Elétrica',
+          id: 'cervejada',
+        },
       ],
     },
     {

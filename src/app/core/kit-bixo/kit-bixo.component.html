@@ -1,8 +1,8 @@
 <app-page-title></app-page-title>
 <p>
-  Todo ano é elaborado o famoso Kit Bixo, um conjunto de itens especiais da Elétrica 
-  e do CAASO que podem ser adquiridos durante a Semana de Recepção. Mas cuidado, os Kits 
-  são limitados e podem acabar, então não pastela e garanta o seu!
+  Todo ano é elaborado o famoso Kit Bixo, um conjunto de itens especiais da Elétrica e do
+  CAASO que podem ser adquiridos durante a Semana de Recepção. Mas cuidado, os Kits são
+  limitados e podem acabar, então não pastela e garanta o seu!
 </p>
 
 <app-figure
@@ -19,36 +19,73 @@
   <app-title [subtitle]="true">Compra do Kit Bixo</app-title>
 
   <p>
-    Está oficialmente declarado O INÍCIO DAS VENDAS DO <strong>KIT BIXO 2023</strong>!
-    Com as vendas iniciadas dia <strong>13/02</strong>, vocês já podem garantir esse 
-    combo incrível dos mais diversos itens. Para adquirir o seu Kit Bixo, acesse: 
-    <a href="https://cheersapp.com.br/sasel.usp" target="_blank" rel="noopener noreferrer">Vendas Kit Bixo.</a>
+    Está oficialmente declarado O INÍCIO DAS VENDAS DO <strong>KIT BIXO 2023</strong>! Com
+    as vendas iniciadas dia <strong>13/02</strong>, vocês já podem garantir esse combo
+    incrível dos mais diversos itens. Para adquirir o seu Kit Bixo, acesse:
+    <a href="https://cheersapp.com.br/sasel.usp" target="_blank" rel="noopener noreferrer"
+      >Vendas Kit Bixo.</a
+    >
   </p>
 
   <p>
-    Os meios de pagamento disponíveis são: Boleto Bancário, PIX e Cartão de Crédito,
-    e você poderá retirar o seu pedido presencialmente em São Carlos durante a Semana de Recepção!
+    Os meios de pagamento disponíveis são: Boleto Bancário, PIX e Cartão de Crédito, e
+    você poderá retirar o seu pedido presencialmente em São Carlos durante a Semana de
+    Recepção!
   </p>
 
   <p>
     Vale lembrar que os produtos do Kit (a seguir) não serão vendidos individualmente:
   </p>
-    <ul>
-      <li>1 x Camiseta</li>
-      <li>1 x Caneca</li>
-      <li>1 x Tirante</li>
-      <li>1 x Chaveiro-Abridor</li>
-      <li>2 x Adesivos</li>
-      <li>1 x Botton</li>
-      <li>1 x Sacochila</li>
-      <li>1 x Manual do Bixo</li>
-    </ul>
+  <ul>
+    <li>1 x Camiseta</li>
+    <li>1 x Caneca</li>
+    <li>1 x Tirante</li>
+    <li>1 x Chaveiro-Abridor</li>
+    <li>2 x Adesivos</li>
+    <li>1 x Botton</li>
+    <li>1 x Sacochila</li>
+    <li>1 x Manual do Bixo</li>
+  </ul>
 </section>
 
 <section>
   <a id="edicoes-anteriores"></a>
-  <app-title [subtitle]="true"
-    >Edições Anteriores</app-title
-  >
-  <app-alternating-layout [contents]="lastEditionsTextAndImageList"></app-alternating-layout>
+  <app-title [subtitle]="true">Edições Anteriores</app-title>
+  <app-alternating-layout
+    [contents]="lastEditionsTextAndImageList"
+  ></app-alternating-layout>
+</section>
+
+<section>
+  <a id="cervejada"></a>
+  <app-title [subtitle]="true">Cervejada da Elétrica</app-title>
+
+  <p>
+    A tradicional <strong>Cervejada da Elétrica</strong> é um evento muito importante da
+    Semana de Recepção, no qual os bixos dos vários cursos do campus podem se conhecer e
+    também conhecer seus veteranos. Como de costume, nossa cervejada será realizada na
+    <strong>terça-feira (14/03)</strong>, das <strong>16h00min às 22h00min</strong>, e,
+    vale lembrar que
+    <strong
+      >os bixos que forem com a camiseta do kit bixo tem entrada garantida na
+      cervejada</strong
+    >, ou seja, não precisam pagar qualquer valor para entrar lá!
+  </p>
+
+  <p>
+    <strong>Vai perder essa oportunidade?</strong> Corre lá no
+    <a
+      href="https://instagram.com/cervejada.eletrica"
+      target="_blank"
+      rel="noopener noreferrer"
+      >instagram do evento</a
+    >
+    para obter mais informações e aproveita para comprar seu Kit Bixo na seção
+    <a href="https://bixos.saselusp.com.br/kit-bixo#compra-de-kits">Compra do Kit Bixo</a>
+    acima para já garantir a sua entrada!
+  </p>
+
+  <app-cervejada-panel color="secondary" [size]="30"></app-cervejada-panel>
+
+  <app-image-grid [gridItems]="cervejada" [large]="true"></app-image-grid>
 </section>

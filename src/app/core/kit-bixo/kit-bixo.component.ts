@@ -32,4 +32,30 @@ export class KitBixoComponent {
       text: 'Vemos ao lado a edição de 2020, cujo tema escolhido foi "pixel art".',
     },
   ]
+  cervejada: ImageGridItemModel[] = [
+    {
+      image: {
+        src: 'assets/images/cervejada/panoramageral.jpg',
+        alt: 'Panorama Geral do Evento',
+        caption: 'Panorama da Cervejada de 2020',
+      },
+      fill: true,
+    },
+    {
+      image: {
+        src: 'assets/images/cervejada/grupodepessoas.jpg',
+        alt: 'Pequeno Grupo de Pessoas na Cervejada',
+        caption: 'Grupo de Pessoas na Cervejada de 2020',
+      },
+      fill: true,
+    },
+    {
+      image: {
+        src: 'assets/images/cervejada/grandegrupodepessoas.jpg',
+        alt: 'Grande Grupo de Pessoas na Cervejada',
+        caption: 'Grupo de Pessoas Aproveitando a Cervejada',
+      },
+      fill: true,
+    },
+  ]
 }
