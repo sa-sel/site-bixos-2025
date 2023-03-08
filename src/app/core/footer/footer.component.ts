@@ -10,7 +10,7 @@ export class FooterComponent {
   socialMedia: SocialMediaModel[] = [
     { name: SocialMedia.Facebook, url: 'https://www.facebook.com/sasel.usp' },
     { name: SocialMedia.Instagram, url: 'https://www.instagram.com/sasel.usp/' },
-    { name: SocialMedia.WhatsApp, url: '+55 (16) 99991-2135' },
+    { name: SocialMedia.WhatsApp, url: '+55 (16) 99619-0880' },
     { name: SocialMedia.Email, url: 'sasel.usp@gmail.com' },
     {
       name: SocialMedia.YouTube,
