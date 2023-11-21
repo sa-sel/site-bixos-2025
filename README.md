@@ -1,11 +1,11 @@
-# Site dos Bixos 2023 🚼
+# Site dos Bixos 2024 🚼
 
 This site was developed as a tool to the reception of the electrical engineering freshmen from 2023, at EESC-USP. It's objective is to display all relevant info regarding the university.
 
 ## Executing
 
-1.  `git clone git@github.com:sa-sel/site-bixos-2023.git`
-2.  `cd /path/to/site-bixos-2023/`
+1.  `git clone git@github.com:sa-sel/site-bixos-2024.git`
+2.  `cd /path/to/site-bixos-2024/`
 3.  `npm install`
 4.  `ng serve`
 5.  Visit [localhost:4200](http://localhost:4200) in a browser
@@ -41,7 +41,7 @@ Aside from that, start all your commit messages with `#<ISSUE/TASK_NUMBER> - `. 
 ### Workflow
 
 1.  Clone the repository
-2.  Choose a task you want to work [in the board](https://github.com/sa-sel/site-bixos-2023/projects/1)
+2.  Choose a task you want to work [in the board](https://github.com/sa-sel/site-bixos-2024/projects/1)
     - The task must be in the 'To do' column and have no assignees
     - Prioritize tasks with higher priority: enhancement < moderate < important < critical
     - Check if the task has any dependencies and, if so, their dependencies were already closed
