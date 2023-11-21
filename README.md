@@ -1,6 +1,6 @@
 # Site dos Bixos 2024 🚼
 
-This site was developed as a tool to the reception of the electrical engineering freshmen from 2023, at EESC-USP. It's objective is to display all relevant info regarding the university.
+This site was developed as a tool to the reception of the electrical engineering freshmen from 2024, at EESC-USP. It's objective is to display all relevant info regarding the university.
 
 ## Executing
 
