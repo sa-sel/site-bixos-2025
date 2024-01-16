@@ -11,6 +11,10 @@ export class FooterComponent {
     { name: SocialMedia.Facebook, url: 'https://www.facebook.com/sasel.usp' },
     { name: SocialMedia.Instagram, url: 'https://www.instagram.com/sasel.usp/' },
     { name: SocialMedia.WhatsApp, url: '+55 (16) 99619-0880' },
+    {
+      name: SocialMedia.LinkedIn,
+      url: 'https://www.linkedin.com/company/sasel-eesc-usp',
+    },
     { name: SocialMedia.Email, url: 'sasel.usp@gmail.com' },
     {
       name: SocialMedia.YouTube,
