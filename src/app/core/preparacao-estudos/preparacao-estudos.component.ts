@@ -11,7 +11,7 @@ export class PreparacaoEstudosComponent {
       image: {
         src: '/assets/images/preparacao/Todoist.png',
         alt: 'todist',
-        caption: 'Todist',
+        caption: 'Todoist',
       },
       url: 'https://todoist.com/',
     },
@@ -143,6 +143,191 @@ export class PreparacaoEstudosComponent {
         caption: 'Edisciplinas',
       },
       url: 'https://edisciplinas.usp.br/acessar/',
+    },
+  ]
+
+  electricalToolsLogos: ImageGridItemModel[] = [
+    {
+      image: {
+        src: '/assets/images/preparacao/ltspice.png',
+        alt: 'ltspice',
+        caption: 'LTspice',
+      },
+      url: 'https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/simulide.png',
+        alt: 'simulide',
+        caption: 'SimulIDE',
+      },
+      url: 'https://simulide.com/p/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/falstad.png',
+        alt: 'falstad',
+        caption: 'Falstad',
+      },
+      url: 'https://www.falstad.com/circuit/circuitjs.html',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/proteus.png',
+        alt: 'proteus',
+        caption: 'Proteus',
+      },
+      url: 'https://www.labcenter.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/kicad.png',
+        alt: 'kicad',
+        caption: 'KiCad',
+      },
+      url: 'https://www.kicad.org/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/tinkercad.png',
+        alt: 'tinkercad',
+        caption: 'Tinkercad',
+      },
+      url: 'https://www.tinkercad.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/fritzing.png',
+        alt: 'fritzing',
+        caption: 'Fritzing',
+      },
+      url: 'https://fritzing.org/',
+    },
+  ]
+
+  programmingToolsLogos: ImageGridItemModel[] = [
+    {
+      image: {
+        src: '/assets/images/preparacao/vscode.png',
+        alt: 'vscode',
+        caption: 'Visual Studio Code',
+      },
+      url: 'https://code.visualstudio.com/Download',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/onlinegdb.png',
+        alt: 'onlinegdb',
+        caption: 'OnlineGDB',
+      },
+      url: 'https://www.onlinegdb.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/replit.png',
+        alt: 'replit',
+        caption: 'replit',
+      },
+      url: 'https://replit.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/git.png',
+        alt: 'git',
+        caption: 'git',
+      },
+      url: 'https://git-scm.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/github.png',
+        alt: 'github',
+        caption: 'GitHub',
+      },
+      url: 'https://github.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/arduinoide.png',
+        alt: 'arduinoide',
+        caption: 'ArduinoIDE',
+      },
+      url: 'https://www.arduino.cc/en/software',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/matlab.png',
+        alt: 'matlab',
+        caption: 'MATLAB',
+      },
+      url: 'https://www.mathworks.com/products/matlab.html',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/octave.png',
+        alt: 'gnuoctave',
+        caption: 'GNU Octave',
+      },
+      url: 'https://octave.org/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/octaveonline.png',
+        alt: 'octaveonline',
+        caption: 'OctaveOnline',
+      },
+      url: 'https://octave-online.net/',
+    },
+  ]
+
+  mathematicalToolsLogos: ImageGridItemModel[] = [
+    {
+      image: {
+        src: '/assets/images/preparacao/desmos.png',
+        alt: 'desmos',
+        caption: 'desmos',
+      },
+      url: 'https://www.desmos.com/calculator?lang=pt-BR',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/geogebra.png',
+        alt: 'geogebra',
+        caption: 'GeoGebra',
+      },
+      url: 'https://www.geogebra.org/?lang=pt',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/veusz.png',
+        alt: 'veusz',
+        caption: 'Veusz',
+      },
+      url: 'https://veusz.github.io/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/symbolab.png',
+        alt: 'symbolab',
+        caption: 'Symbolab',
+      },
+      url: 'https://pt.symbolab.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/wolframalpha.png',
+        alt: 'wolframalpha',
+        caption: 'WolframAlpha',
+      },
+      url: 'https://www.wolframalpha.com/',
+    },
+    {
+      image: {
+        src: '/assets/images/preparacao/integralcalculator.png',
+        alt: 'integralcalculator',
+        caption: 'Integral Calculator',
+      },
+      url: 'https://www.integral-calculator.com/',
     },
   ]
 }
