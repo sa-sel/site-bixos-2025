@@ -23,9 +23,21 @@ const routes: RouteModel[] = [
     path: '',
     component: HomeComponent,
     data: {
-      title: 'Recepção dos Bixos da Elétrica - 2023',
+      title: 'Recepção dos Bixos da Elétrica - 2024',
       background: [
         { src: '/assets/images/home/banner.jpg', alt: 'Membros da SA-SEL em 2019' },
+        {
+          src: '/assets/images/home/recepcao_2020.jpg',
+          alt: 'Bixos ingressantes de 2020',
+        },
+        {
+          src: '/assets/images/home/recepcao_2023.jpg',
+          alt: 'Bixos ingressantes de 2023',
+        },
+        {
+          src: '/assets/images/home/recepcao_2023_2.jpg',
+          alt: 'Bixos ingressantes de 2023',
+        },
       ],
     },
   },
