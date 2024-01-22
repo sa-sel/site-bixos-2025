@@ -74,7 +74,7 @@ export class BibliotecasComponent {
       image: {
         alt: 'reforma biblioteca eesc',
         src: 'assets/images/bibliotecas/reformabibliotecaeesc.jpg',
-        caption: 'Atual Biblioteca EESC em reforma',
+        caption: 'Biblioteca EESC durante a reforma',
       },
       fill: true,
     },
@@ -82,7 +82,15 @@ export class BibliotecasComponent {
       image: {
         alt: 'biblioteca provisória espaço primavera',
         src: 'assets/images/bibliotecas/bibliotecaespacoprimavera.jpg',
-        caption: 'Biblioteca EESC atendendo provisoriamente no Espaço Primavera',
+        caption: 'Biblioteca EESC atendendo no Espaço Primavera',
+      },
+      fill: true,
+    },
+    {
+      image: {
+        alt: 'biblioteca eesc',
+        src: 'assets/images/bibliotecas/bibliotecaeesc.jpg',
+        caption: 'Biblioteca EESC atualmente',
       },
       fill: true,
     },
