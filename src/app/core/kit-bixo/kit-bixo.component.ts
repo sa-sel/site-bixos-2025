@@ -9,6 +9,14 @@ export class KitBixoComponent {
   lastEditionsTextAndImageList: AlternatingLayoutModel[] = [
     {
       image: {
+        alt: 'Kit Bixo 2023',
+        src: '/assets/images/kit-bixo/kit_bixo_2023.jpg',
+        caption: 'Kit Bixo de 2023',
+      },
+      text: 'Ao lado temos a edição de 2023, cujo tema foi "neon".',
+    },
+    {
+      image: {
         alt: 'Kit Bixo 2022',
         src: '/assets/images/kit-bixo/kit_bixo_2022.jpg',
         caption: 'Kit Bixo de 2022',
