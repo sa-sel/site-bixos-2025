@@ -20,7 +20,7 @@ export class GroupsPanelComponent implements OnInit {
     },
     {
       name: SocialMedia.WhatsAppGroup,
-      url: '',
+      url: 'https://chat.whatsapp.com/BGOG4zKXXAZ2FGF5JfKgiB',
     },
   ]
 }
