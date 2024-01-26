@@ -16,7 +16,7 @@ export class CervejadaPanelComponent implements OnInit {
   cervejadamedia: SocialMediaModel[] = [
     {
       name: SocialMedia.Instagram,
-      url: 'https://instagram.com/cervejada.eletrica/',
+      url: 'https://instagram.com/cervejada.eletricomp/',
     },
   ]
 }
