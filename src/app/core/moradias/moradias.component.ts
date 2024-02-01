@@ -22,13 +22,6 @@ export class MoradiasComponent {
   housingPhotos: ImageGridItemModel[] = [
     {
       image: {
-        src: '/assets/images/moradias/alojaA.jpg',
-        alt: 'bloco a',
-        caption: 'Bloco A',
-      },
-    },
-    {
-      image: {
         src: '/assets/images/moradias/aloja1.jpg',
         alt: 'foto do alojamento',
         caption: 'Bloco do alojamento da USP',
